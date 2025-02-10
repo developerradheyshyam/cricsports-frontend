@@ -11,6 +11,10 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily:{
+        urbanist: ['var(--font-urbanist)'],
+        dmSerif: ['var(--font-dm-serif)'],
+      },
     },
   },
   plugins: [],
