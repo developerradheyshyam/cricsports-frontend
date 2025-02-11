@@ -1,6 +1,7 @@
 import { dmSerif, urbanist } from "@/utils/fonts"
 import Image from "next/image"
-import { ArrowRight, Calendar, CheckCircle, Clock, MessageSquare, PresentationIcon as PresentationChart, PresentationIcon } from 'lucide-react'
+import { ArrowRight, Calendar, CheckCircle, Clock, MessageSquare, PresentationIcon, Presentation, Star, Rocket } from 'lucide-react'
+import Blog from "@/screens/Blog";
 
 export default function Page() {
   const features = [
@@ -82,28 +83,61 @@ export default function Page() {
       bgColor: "bg-orange-50"
     }
   ];
-  const blogPosts = [
+
+  const services = [
     {
       id: 1,
-      date: '17 Jan, 2024',
-      time: '10:45 AM',
-      title: 'Boost Your Cricket Website with a Powerful Cricket API Integration',
-      description: 'Elevate your cricket website with our dynamic Cricket API Integration. Instantly access live scores.',
+      title: 'Cricket Data Feed API from CricSportz empowers your sports platform.',
+      icon: <Presentation className="w-8 h-8 text-orange-300" />,
     },
     {
       id: 2,
-      date: '17 Jan, 2024',
-      time: '10:45 AM',
-      title: 'Boost Your Cricket Website with a Powerful Cricket API Integration',
-      description: 'Elevate your cricket website with our dynamic Cricket API Integration. Instantly access live scores.',
+      title: 'Widest coverage and dependability.',
+      icon: <Presentation className="w-8 h-8 text-orange-300" />,
     },
     {
       id: 3,
-      date: '17 Jan, 2024',
-      time: '10:45 AM',
-      title: 'Boost Your Cricket Website with a Powerful Cricket API Integration',
-      description: 'Elevate your cricket website with our dynamic Cricket API Integration. Instantly access live scores.',
+      title: 'Easy Integration. Development-Friendly.',
+      icon: <Presentation className="w-8 h-8 text-orange-300" />,
     },
+    {
+      id: 4,
+      title: 'Mobile App Enhance UX using Widgets.',
+      icon: <Presentation className="w-8 h-8 text-orange-300" />,
+    },
+    {
+      id: 5,
+      title: 'Customized API Products for All Sports',
+      icon: <Presentation className="w-8 h-8 text-orange-300" />,
+    },
+  ];
+  const testimonials = [
+    {
+      text: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard",
+      author: "Chetan Mayal",
+      position: "CEO, Cricsportz",
+      rating: 5
+    },
+    {
+      text: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard",
+      author: "Chetan Mayal",
+      position: "CEO, Cricsportz",
+      rating: 5
+    },
+    {
+      text: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard",
+      author: "Chetan Mayal",
+      position: "CEO, Cricsportz",
+      rating: 5
+    },
+  ];
+  const whyChooseFeatures = [
+    { title: 'Fast Delivery Time' },
+    { title: 'Affordable Price' },
+    { title: 'Complete Transparency' },
+    { title: 'Productive Communication' },
+    { title: 'Unmatchable Quality' },
+    { title: 'Professional Team' },
   ];
   return (
     <main className={`${urbanist.variable} font-urbanist min-h-screen w-full relative `}>
@@ -116,7 +150,7 @@ export default function Page() {
         <div className="relative z-10 container mx-auto px-4 py-16 text-center  flex flex-col justify-center items-center space-y-14">
           <div className="max-w-4xl mx-auto space-y-6">
             <h1 className={`${urbanist.variable} text-4xl md:text-[3.7rem] leading-[1] font-bold font-urbanist tracking-wide `}>
-              Cricket Score and <span className={`${dmSerif.variable} text-red-600 font-dmSerif italic`}>Statistics API</span> for Website & App
+              Cricket Score and <span className={`${dmSerif.variable} text-red-600  font-thin font-dmSerif italic`}>Statistics API</span> for Website & App
             </h1>
 
 
@@ -178,9 +212,9 @@ export default function Page() {
         <div className="relative max-w-7xl h-screen mx-auto z-10">
           <div className="max-w-7xl mx-auto mb-16 text-center">
             <h2 className={` ${urbanist.variable} text-3xl md:text-4xl font-semibold `}>
-              Apps Using <span className={`${dmSerif.variable} font-dmSerif text-red-600 italic`}>Our Cricket API</span> for
+              Apps Using <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Our Cricket API</span> for
               <br />
-              <span className={`${dmSerif.variable} font-dmSerif text-red-600 italic `}>Various</span> functionalities.
+              <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic `}>Various</span> functionalities.
             </h2>
           </div>
 
@@ -233,10 +267,10 @@ export default function Page() {
           <div className="max-w-[50%] space-y-6  text-black z-10">
             <div className="space-y-2">
               <h1 className="text-4xl font-bold">
-                Live Cricket Score and <span className={`${dmSerif.variable} font-dmSerif text-red-600 italic`}>Statistics</span>
+                Live Cricket Score and <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic font-thin`}>Statistics</span>
               </h1>
-              <h2 className="text-3xl">
-              <span className={`${dmSerif.variable} font-dmSerif text-red-600 `}>API  </span>  For   <span className={`${dmSerif.variable} font-dmSerif text-red-600 italic`}>Website and App</span>
+              <h2 className="text-3xl font-semibold">
+                <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic mr-2`}>API  </span>  For   <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic font-thin`}>Website and App</span>
               </h2>
             </div>
 
@@ -255,7 +289,7 @@ export default function Page() {
           <div className="w-1/2 flex justify-center ">
             <div className="relative flex items-center h-64 w-full">
               <h3 className="text-4xl max-w-[80%] font-bold bg">
-                What We Offer API <span className={`${dmSerif.variable} font-dmSerif text-red-600 italic`}>Features</span> of <span className={`${dmSerif.variable} font-dmSerif text-red-600 italic`}>CricSports</span>
+                What We Offer API <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Features</span> of <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>CricSports</span>
               </h3>
             </div>
           </div>
@@ -327,7 +361,7 @@ export default function Page() {
       <div className="max-w-7xl min-h-screen  container mx-auto py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Features of Our <span className={`${dmSerif.variable} font-dmSerif text-red-600 italic`}>Real-Time Cricket</span> API
+            Features of Our <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Real-Time Cricket</span> API
           </h2>
           <p className="max-w-3xl mx-auto text-gray-600 leading-relaxed">
             In order to build incredible cricket applications, accurate cricket documentation was required. Discover at CricSportz the reasons why our clients are so satisfied with our goods. The most important advantages that our live Cricket API has over its rivals are outlined in the following paragraphs
@@ -352,7 +386,7 @@ export default function Page() {
               </div>
             ))}
 
-            <button className="mt-4 px-8 py-3 border-2 border-red-600 text-red-600 rounded-lg hover:bg-red-600 hover:text-white transition-colors">
+            <button className="mt-4 px-8 py-3 border-2 border-red-600 text-red-600  font-thin rounded-lg hover:bg-red-600 hover:text-white transition-colors">
               View All Features
             </button>
           </div>
@@ -378,7 +412,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto px-4 py-16 flex flex-col justify-center items-center">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Cricket Feed <span className={`${dmSerif.variable} font-dmSerif text-red-600 italic`}>Coverage</span>
+              Cricket Feed <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Coverage</span>
             </h2>
             <p className="text-gray-600 leading-relaxed">
               All important tours, series, and domestic tournaments from across the world are included in the CricSportz cricket data stream coverage. Our cricket data stream may be utilized in a variety of applications, including but not limited to Livescore, fantasy apps, betting, and others. The coverage of the feed includes live scorecards, live fantasy metrics, as well as pregame and in-play odds from bookmakers.
@@ -393,63 +427,246 @@ export default function Page() {
           />
         </div>
       </div>
-      <section className="max-w-7xl mx-auto px-4 py-12">
-        {/* Header Section */}
-        <div className="text-center mb-8">
-          <h2 className="text-4xl font-bold mb-4">
-            Latest <span className={`${dmSerif.variable} font-dmSerif text-red-600 italic`}>News & Blogs</span>
-          </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
-            All important tours, series, and domestic tournaments from across the world are included in the CricSportz cricket data stream.
-            data stream may be utilized in a variety of applications, including but not limited to
-          </p>
+      <div className="min-h-screen bg-[#1F242A] py-20 px-4 relative overflow-hidden flex justify-center items-center">
+        {/* Background effects */}
+        <div className="absolute inset-0 z-0">
+          <Image src="/specialbg.png" alt="Background" fill className="object-fit" priority />
         </div>
-
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {blogPosts.map((post) => (
-            <div key={post.id} className="bg-white rounded-lg shadow-lg overflow-hidden h-[80vh]">
-              {/* Card Image Section */}
-              <div className="overflow-hidden rounded-xl h-80 bg-purple-900">
-                {/* Stadium Light Effects */}
-                <img
-                  src="/liveCricket.png"
-                  alt="Cricket API"
-                  className="w-full h- object-fit"
-                />
-              </div>
-
-              {/* Card Content */}
-              <div className="p-6">
-                {/* Date and Time */}
-                <div className="flex items-center gap-2 text-gray-500 mb-4">
-                <div className="w-4 h-4 rounded-lg flex items-center justify-center">
-                      <Image src="/calender.png" alt="Background" width={80} height={80} className="object-fit" priority />
-                    </div>
-                  <span>{post.date} | {post.time}</span>
+        <div className="absolute  z-0 -top-20 right-10">
+          <Image src="/review (1).png" alt="Background" width={800} height={200} className="object-fit" priority />
+        </div>
+        <div className="absolute  z-0 -top-64 left-0">
+          <Image src="/review (2).png" alt="Background" width={600} height={200} className="object-fit" priority />
+        </div>
+        <div className="absolute  z-0 right-10 bottom-0">
+          <Image src="/review (3).png" alt="Background" width={100} height={100} className="object-fit" priority />
+        </div>
+        <div className="absolute  z-0 right-0 bottom-30">
+          <Image src="/review (4).png" alt="Background" width={600} height={200} className="object-fit" priority />
+        </div>
+        <div className="absolute  z-0 left-0 -bottom-20">
+          <Image src="/review (5).png" alt="Background" width={600} height={200} className="object-fit" priority />
+        </div>
+      {/* Main container */}
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="grid lg:grid-cols-2 gap-32 items-center">
+          {/* Left side with illustration */}
+          <div className="relative">
+            {/* Circle background */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-pink-200/20 rounded-full blur-xl" />
+            
+            {/* Placeholder for the main image */}
+            <div className="relative">
+              <img 
+                src="/Banner-girl-1.png" 
+                alt="Support Representative" 
+                className="relative z-10"
+              />
+              
+              {/* Chat widget overlay */}
+              <div className="absolute top-1/2 right-0 bg-white rounded-lg p-4 shadow-xl w-64">
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                    <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"/>
+                    </svg>
+                  </div>
+                  <span className="font-semibold">Chat With Our Expert</span>
                 </div>
-
-                {/* Title */}
-                <h3 className="text-xl font-semibold mb-3">
-                  {post.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-gray-600 mb-4">
-                  {post.description}
-                </p>
-
-                {/* Read More Button */}
-                <button className="flex space-x-3 items-center mt-4 px-8 py-3 border-2 border-red-600 text-red-600 rounded-lg hover:bg-red-600 hover:text-white transition-colors">
-                  <span> Read More
-                  </span>                
-                   <ArrowRight className="bg-red-700 p-1 rounded-full text-white" />
+                <div className="space-y-2 mb-3">
+                  <div className="h-2 bg-gray-200 rounded w-full"></div>
+                  <div className="h-2 bg-gray-200 rounded w-3/4"></div>
+                </div>
+                <button className="w-full bg-blue-500 text-white rounded py-2 text-sm">
+                  Get Started
                 </button>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Right side with heading and features */}
+          <div className="tracking-wide">
+            <h2 className="text-2xl md:text-4xl font-bold text-white mb-12">
+              Why Choose <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Cricsportz</span> The Best
+              <br />
+              <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Cricket API</span> Service Provider
+            </h2>
+
+            {/* Features grid */}
+            <div className="grid md:grid-cols-2 gap-6">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-white/10 h-40 backdrop-blur-lg rounded-2xl p-6 group hover:bg-white/20 transition-all duration-300"
+                >
+                  <div className="flex flex-col justify-between  gap-3 h-full">
+                    <div className="p-2 ">
+                    <Image src="/shuttle 1.png" alt="Background" width={50} height={50} className="object-fit" priority />
+                    </div>
+                    <span className="text-white font-medium">{feature.title}</span>
+                  </div>
+                </div>
+              ))}
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-white/10 h-40 backdrop-blur-lg rounded-2xl p-6 group hover:bg-white/20 transition-all duration-300"
+                >
+                  <div className="flex flex-col justify-between  gap-3 h-full">
+                    <div className="p-2 ">
+                    <Image src="/shuttle 1.png" alt="Background" width={50} height={50} className="object-fit" priority />
+                    </div>
+                    <span className="text-white font-medium">{feature.title}</span>
+                  </div>
+                </div>
+              ))}
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div className="min-h-screen bg-[#1F242A] py-20 px-4 relative overflow-hidden flex justify-center items-center">
+        {/* Background effects */}
+        <div className="absolute inset-0 z-0">
+          <Image src="/specialbg.png" alt="Background" fill className="object-fit" priority />
+        </div>
+        <div className="absolute  z-0 -top-20 right-10">
+          <Image src="/review (1).png" alt="Background" width={800} height={200} className="object-fit" priority />
+        </div>
+        <div className="absolute  z-0 -top-64 left-0">
+          <Image src="/review (2).png" alt="Background" width={600} height={200} className="object-fit" priority />
+        </div>
+        <div className="absolute  z-0 right-10 bottom-0">
+          <Image src="/review (3).png" alt="Background" width={100} height={100} className="object-fit" priority />
+        </div>
+        <div className="absolute  z-0 right-0 bottom-30">
+          <Image src="/review (4).png" alt="Background" width={600} height={200} className="object-fit" priority />
+        </div>
+        <div className="absolute  z-0 left-0 -bottom-20">
+          <Image src="/review (5).png" alt="Background" width={600} height={200} className="object-fit" priority />
+        </div>
+        {/* Content container */}
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Our Happy Users & Their <span className={`${dmSerif.variable} text-red-600  font-thin font-dmSerif italic`}>Cricsportz</span> API
+          </h2>
+
+          <p className="text-gray-300 max-w-3xl mx-auto mb-16">
+            Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's
+            Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And
+          </p>
+
+          {/* Testimonials slider */}
+          <div className="flex overflow-hidden  w-full">
+            <div className="flex sapce-x-3 "
+            >
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="flex-1 px-4">
+                  <div className="bg-white/10 backdrop-blur-lg flex justify-evenly flex-col  border-t-[2px] border-t-gray-500 border-l-[2px] border-l-gray-500  rounded-2xl p-8 mx-auto max-w-lg h-96">
+                    {/* Star rating */}
+                    <div className="flex space-x-1 mb-6">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
+
+                    {/* Testimonial text */}
+                    <p className="text-white text-lg mb-8 text-left">"{testimonial.text}"</p>
+
+                    {/* Author info */}
+                    <div className="flex items-center  gap-4">
+                      <img
+                        src="/Avatar.png"
+                        alt={testimonial.author}
+                        className="w-12 h-12 rounded-full"
+                      />
+                      <div className="text-left">
+                        <h4 className="text-white font-semibold">{testimonial.author}</h4>
+                        <p className="text-gray-400 text-sm">{testimonial.position}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Navigation dots */}
+          <div className="flex justify-center gap-2 mt-8">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                className={` h-2 rounded-full transition-all ${index === 0 ? 'bg-white w-6' : 'w-2 bg-white/50'
+                  }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        {/* Header Section */}
+        <div className="flex justify-between items-center mb-8">
+          <div className="text-3xl">
+            <h2 className=" font-semibold">Explore Our Data Services</h2>
+            <div className="flex items-center gap-2">
+              <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Cricket API</span>
+              <span className="font-semibold">Multiple Products</span>
+            </div>
+          </div>
+          <button className="flex items-center gap-1 text-sm text-red-600 border border-red-600 rounded-full px-4 py-1 hover:bg-red-50 transition-colors">
+            View All Feature
+            <ArrowRight className="w-4 h-4" />
+          </button>
+        </div>
+
+        {/* Grid Layout */}
+        <div className="flex flex-col gap-6">
+          {/* First 5 Service Cards */}
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-6">
+            {services.map((service) => (
+              <div
+                key={service.id}
+                className="bg-white flex justify-evenly flex-col rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow h-80"
+              >
+                <div className="mb-4">
+                  <Image src="/cup.png" alt="Background" width={50} height={50} className="object-fit" priority />
+                </div>
+                <h3 className="text-xl max-w-[70%] font-semibold mb-4">
+                  {service.title}
+                </h3>
+                <button className="flex space-x-3 items-center gap-1 text-sm text-red-600 border border-red-600 rounded-md max-w-[40%] px-4 py-2  hover:bg-red-50 transition-colors">
+                  <span>View More</span>
+                  <ArrowRight className="w-4 h-4 bg-red-500 text-white flex justify-center items-center p-1 rounded-full" />
+                </button>
+              </div>
+            ))}
+            <div className="relative overflow-hidden h-[60vh] rounded-lg p-6 text-white md:col-span-2 lg:col-span-1 lg:row-span-2">
+              <div className="absolute inset-0 -z-10">
+                <Image src="/sv-bg.png" alt="Background" fill className="object-fit" priority />
+              </div>
+              <h3 className="text-lg font-medium mb-2">API Features Management</h3>
+              <p className="mb-4 text-3xl font-medium ">Using our Cricket API Cricket! Grow any Current System</p>
+              <button className=" text-white rounded-full px-6 py-2 mb-8 transition-colors bg-[#8162E8]">
+                Work With Us
+              </button>
+              <div className="mt-4  w-full h-full">
+                <img
+                  src="/sv-dashbord.png "
+                  alt="API Features Dashboard"
+                  className="w-full h-auto rounded-lg absolute bottom-0"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* API Features Card */}
+
         </div>
       </section>
+  
+    <Blog />
     </main>
   )
 }
