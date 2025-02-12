@@ -33,9 +33,9 @@ const Contact = () => {
 
             </section>
             <section className="h-[60vh] flex pt-20  -mt-96 bg-white  ">
-                <div className="relative z-[1000]  h-full w-full ">
+                <div className="relative md:min-h-[60vh]  h-full w-full  overflow-x-hidden overflow-y-visible">
 
-                    <div className="absolute flex z-10 justify-center items-center -translate-x-1/2  z-0 left-1/2   w-full ">
+                    <div className="absolute flex justify-center items-center -translate-x-1/2  z-0 left-1/2   w-full ">
                         <Image
                             src="/contact (2).png"
                             alt="Background"
