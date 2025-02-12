@@ -176,7 +176,7 @@ export default function Page() {
       <div className="mb-4">
         <Image src="/cup.png" alt="Service icon" width={50} height={50} className="object-contain" />
       </div>
-      <h3 className="text-lg sm:text-xl max-w-[70%] font-semibold mb-4">
+      <h3 className="text-md sm:text-xl md:max-w-[70%] font-semibold mb-4">
         {service.title}
       </h3>
       <button className="flex items-center gap-2 text-sm text-red-600 border border-red-600 rounded-md w-fit px-4 py-2 hover:bg-red-50 transition-colors">
@@ -259,7 +259,7 @@ export default function Page() {
             {/* Client Section - Responsive layout */}
             <div className="pt-8 md:pt-12 relative flex justify-center flex-col items-center">
               {/* Decorative Shape - Hidden on mobile */}
-              <div className="hidden md:block absolute left-1/4 top-20">
+              <div className="hidden md:block absolute left-[30%] top-20">
                 <Image
                   src="/shape2.png"
                   alt="Decorative shape"
@@ -562,7 +562,7 @@ export default function Page() {
             </span>{' '}
             API
           </h2>
-          <p className="max-w-3xl mx-auto text-gray-600 text-sm sm:text-base leading-relaxed px-4">
+          <p className="max-w-3xl mx-auto text-gray-600 text-sm sm:text-base leading-relafxed px-4">
             In order to build incredible cricket applications, accurate cricket documentation was required.
             Discover at CricSportz the reasons why our clients are so satisfied with our goods.
             The most important advantages that our live Cricket API has over its rivals are outlined
@@ -726,7 +726,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="min-h-screen bg-[#1F242A] py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 relative overflow-hidden flex justify-center items-center">
+      <div className="min-h-screen  bg-[#1F242A] py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 relative overflow-hidden flex justify-center items-center">
         {/* Background decorations component remains unchanged */}
         <BackgroundDecorations />
 
@@ -748,17 +748,17 @@ export default function Page() {
           </p>
 
           {/* Testimonials container - modified for better mobile scrolling */}
-          <div className="relative w-full overflow-hidden">
-            <div className="flex snap-x snap-mandatory overflow-x-auto hide-scrollbar">
+          <div className="relative w-full overflow-hidden flex   justify-center ">
+            <div className="flex max-w-7xl justify-center  snap-x snap-mandatory overflow-x-auto hide-scrollbar">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
                   className="flex-none w-full sm:w-[85%] md:w-[45%] lg:w-[32%] snap-center px-3 sm:px-4"
                 >
                   {/* Individual testimonial card - adjusted padding and height */}
-                  <div className="bg-white/10 backdrop-blur-lg flex flex-col justify-between border-t-[2px] border-t-gray-500 border-l-[2px] border-l-gray-500 rounded-2xl p-6 sm:p-8 h-auto min-h-[24rem] sm:min-h-[26rem]">
+                  <div className="bg-white/10 backdrop-blur-lg flex flex-col justify-between border-t-[2px] border-t-gray-500 border-l-[2px] border-l-gray-500 rounded-2xl p-6 sm:p-8 h-auto min-h-[20rem] sm:min-h-[22rem]">
                     {/* Star rating - adjusted size and spacing */}
-                    <div className="flex space-x-1 mb-4 sm:mb-6">
+                    <div className="flex space-x-1 mb-4 sm:mb-6  ">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star
                           key={i}
@@ -768,7 +768,7 @@ export default function Page() {
                     </div>
 
                     {/* Testimonial text - responsive font size and spacing */}
-                    <p className="text-base sm:text-lg text-white mb-6 sm:mb-8 text-left">
+                    <p className="text-sm sm:text-base text-white mb-6 sm:mb-8 text-left">
                     &quot;{testimonial.text}&quot;
                     </p>
 
@@ -809,13 +809,13 @@ export default function Page() {
       </div>
       <section className="max-w-7xl mx-auto px-4 py-8 sm:py-12">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8">
-          <div className="text-2xl sm:text-3xl mb-4 sm:mb-0">
+          <div className=" text-2xl sm:text-3xl mb-4 sm:mb-0">
             <h2 className="font-semibold">Explore Our Data Services</h2>
             <div className="flex items-center gap-2">
-              <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+             
+              <span className="font-semibold">Multiple Products  <span className={`${dmSerif.variable} text-nowrap font-dmSerif text-red-600 font-thin italic`}>
                 Cricket API
-              </span>
-              <span className="font-semibold">Multiple Products</span>
+              </span></span>
             </div>
           </div>
           <button className="flex items-center gap-1 text-sm text-red-600 border border-red-600 rounded-full px-4 py-1 hover:bg-red-50 transition-colors">

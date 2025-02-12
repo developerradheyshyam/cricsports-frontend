@@ -3,25 +3,25 @@ import { Facebook, Twitter, Linkedin, Instagram,MoveUpRight, Phone, Mail, MapPin
 
 const Footer = () => {
   return (
-<footer className="bg-[#000229] text-white">
+<footer className="bg-[#000229] text-white ">
   {/* Newsletter Section */}
-  <div className="container mx-auto px-4 py-8 border-b border-gray-800">
+  <div className=" max-w-7xl mx-auto px-4 py-8 border-b border-gray-800">
     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
       <div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Get Our Newsletter</h2> {/* Adjusted font size for different breakpoints */}
         <p className="text-sm sm:text-base md:text-lg text-gray-400">Get Awesome Update Happenings in the Sports API World</p>
       </div>
-      <div className="flex-grow">
-        <div className="relative mx-auto max-w-full sm:max-w-md md:max-w-2xl">
+      <div className="flex-grow  flex justify-end ">
+        <div className="relative max-w-full sm:max-w-md md:w-[32rem]">
           <div className="absolute inset-y-0 left-0 flex items-center pl-6">
             <Mail className="h-5 w-5 text-gray-400" />
           </div>
           <input
             type="email"
             placeholder="Business email address"
-            className="w-full px-16 py-3 md:py-6 rounded-full bg-white text-black focus:outline-none"
+            className="w-full px-16 py-3 md:py-4 rounded-full bg-white text-black focus:outline-none"
           />
-          <button className="absolute right-0 top-2 flex justify-center items-center w-8 h-8 text-xs md:w-14 md:h-14 mr-4 bg-red-600 rounded-full hover:bg-red-700 transition-colors">
+          <button className="absolute right-0 top-1 flex justify-center items-center w-8 h-8 text-xs md:w-12 md:h-12 mr-4 bg-red-700 rounded-full hover:bg-red-600 transition-colors">
             <MoveUpRight />
           </button>
         </div>
@@ -30,7 +30,7 @@ const Footer = () => {
   </div>
 
   {/* Main Footer Content */}
-  <div className="container mx-auto px-4 py-12">
+  <div className="max-w-7xl mx-auto px-4 py-12">
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
       {/* Logo and About */}
       <div className="space-y-4">
