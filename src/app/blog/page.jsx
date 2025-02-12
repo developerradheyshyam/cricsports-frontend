@@ -178,7 +178,7 @@ const Blog = () => {
                                     </div>
 
                                     {/* Main content - Responsive text sizes and spacing */}
-                                    <div className="flex flex-col justify-between h-full">
+                                    <div className="flex flex-col justify-evenly h-full ">
                                         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-4">
                                             Boost Your Cricket Website with a Powerful Cricket API Integration.
                                         </h2>
@@ -190,7 +190,7 @@ const Blog = () => {
                                         </p>
 
                                         {/* Author info - Consistent sizing across breakpoints */}
-                                        <div className="flex items-center space-x-3">
+                                        <div className="flex items-center space-x-3 mb-10">
                                             <Image
                                                 src="/Avatar.png"
                                                 alt="Author"

@@ -326,7 +326,7 @@ export default function Page() {
           </div>
 
           {/* Features Grid - Converted to responsive grid */}
-          <div className="mx-auto px-4 sm:px-6">
+          <div className="mx-auto px-2 sm:px-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {features.map((feature, index) => (
                 <div
@@ -609,15 +609,15 @@ export default function Page() {
           </div>
 
           {/* Image Section */}
-          <div className="lg:pl-6 xl:pl-12 mt-8 lg:mt-0">
-            <div className="relative rounded-2xl sm:rounded-3xl border-2 border-gray-200 shadow-lg">
+          <div className="lg:pl-6 xl:pl-12 mt-8 lg:mt-0 h-full ">
+            <div className="relative rounded-2xl sm:rounded-3xl border-2  h-full  shadow-lg">
               {/* Main Image */}
-              <div className="relative w-full aspect-[4/3]">
+              <div className="relative w-full h-full min-h-[60vh]">
                 <Image
                   src="/cricketStats.png"
                   alt="Cricket API Dashboard"
                   fill
-                  className="object-cover rounded-2xl sm:rounded-3xl"
+                  className="object-fit"
                   priority
                 />
               </div>
@@ -769,7 +769,7 @@ export default function Page() {
 
                     {/* Testimonial text - responsive font size and spacing */}
                     <p className="text-base sm:text-lg text-white mb-6 sm:mb-8 text-left">
-                      "{testimonial.text}"
+                    &quot;{testimonial.text}&quot;
                     </p>
 
                     {/* Author info - adjusted spacing and image size */}

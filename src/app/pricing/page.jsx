@@ -64,7 +64,7 @@ const Pricing = () => {
                 <div className="absolute  z-0 left-0 -bottom-20">
                     <Image src="/review (5).png" alt="Background" width={600} height={200} className="object-fit" priority />
                 </div>
-                <div className="absolute  flex justify-center items-center -translate-x-1/2 left-1/2 -bottom-40 sm:-bottom-60 md:-bottom-80 w-full">
+                <div className="absolute  flex justify-center items-center -translate-x-1/2 left-1/2 -bottom-40 sm:-bottom-60 md:-bottom-96 w-full">
 
                    <div className="px-6 py-16 bg-white rounded-xl">
 
@@ -73,7 +73,7 @@ const Pricing = () => {
                         alt="Background"
                         width={800}
                         height={600}
-                        className="object-contain w-full max-w-[800px] sm:max-w-[1000px] md:max-w-[1200px] h-auto sm:h-[500px] md:h-[700px] z-50"
+                        className="object-contain w-full max-w-[800px] sm:max-w-[1000px] md:max-w-[1200px] h-auto sm:h-[500px] md:h-[600px] z-50"
                         priority
                     />
                    </div>
