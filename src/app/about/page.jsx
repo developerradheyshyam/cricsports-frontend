@@ -44,10 +44,9 @@ const About = () => {
                     <span className={`${dmSerif.variable}   text-3xl font-thin font-dmSerif italic`}>
 
                         Cricsportz  API and Website & Apps</span>
-                    <p className="max-w-7xl text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p className="max-w-7xl text-center">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
                 </div>
                 <div className="absolute inset-0 -z-10">
                     <Image src="/specialbg.png" alt="Background" fill className="object-fit" priority />
@@ -193,19 +192,20 @@ const About = () => {
                                 The Best <span className="text-red-600">Cricsportz</span><br />
                                 <span className="text-red-600">API</span> Services Of <span className="text-red-600">Partners</span>
                             </h2>
-                          
+
                         </div>
 
                         {/* Features Grid */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="wraper flex flex-col space-y-4">
 
-                        <p className="text-gray-600 max-w-2xl">
-                                Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type.
-                            </p>
-                            <button className=" max-w-52 px-6 py-2 border border-red-600 text-red-600 rounded-lg hover:bg-red-50 transition-colors">
-                                Contact Us
-                            </button>
+                                <p className="text-gray-600 max-w-2xl">
+                                    Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry&apos;s Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type.
+                                </p>
+
+                                <button className=" max-w-52 px-6 py-2 border border-red-600 text-red-600 rounded-lg hover:bg-red-50 transition-colors">
+                                    Contact Us
+                                </button>
                             </div>
                             {serviceFeatures.map((feature, index) => (
                                 <div

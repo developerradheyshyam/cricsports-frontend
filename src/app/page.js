@@ -64,22 +64,22 @@ export default function Page() {
   const cricketFeatures = [
     {
       title: "Live Scores Updated in Real-Time",
-      description: "Real-time data that is both quick anddependable, revolving around the game's facts and happenings.",
+      description: "Real-time data that is both quick anddependable, revolving around the game&apos;s facts and happenings.",
       bgColor: "bg-orange-50"
     },
     {
       title: "A Large Number Of Statistics",
-      description: "Real-time data that is both quick anddependable, revolving around the game's facts and happenings.",
+      description: "Real-time data that is both quick anddependable, revolving around the game&apos;s facts and happenings.",
       bgColor: "bg-purple-50"
     },
     {
       title: "Huge Scope Of Coverage",
-      description: "Real-time data that is both quick anddependable, revolving around the game's facts and happenings.",
+      description: "Real-time data that is both quick anddependable, revolving around the game&apos;s facts and happenings.",
       bgColor: "bg-green-50"
     },
     {
       title: "Tailored Assistance",
-      description: "Real-time data that is both quick anddependable, revolving around the game's facts and happenings.",
+      description: "Real-time data that is both quick anddependable, revolving around the game&apos;s facts and happenings.",
       bgColor: "bg-orange-50"
     }
   ];
@@ -113,19 +113,19 @@ export default function Page() {
   ];
   const testimonials = [
     {
-      text: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard",
+      text: " Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       author: "Chetan Mayal",
       position: "CEO, Cricsportz",
       rating: 5
     },
     {
-      text: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard",
+      text: " Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       author: "Chetan Mayal",
       position: "CEO, Cricsportz",
       rating: 5
     },
     {
-      text: "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard",
+      text: " Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       author: "Chetan Mayal",
       position: "CEO, Cricsportz",
       rating: 5
@@ -153,13 +153,13 @@ export default function Page() {
               Cricket Score and <span className={`${dmSerif.variable} text-red-600  font-thin font-dmSerif italic`}>Statistics API</span> for Website & App
             </h1>
 
-
             <p className="text-gray-700 max-w-4xl mx-auto text-sm md:text-base">
-              Cricket is more than simply a game; it's a way of life for millions of devoted followers. If you're a fan of
+              Cricket is more than simply a game; it&apos;s a way of life for millions of devoted followers. If you&apos;re a fan of
               the game, a fantasy cricket player, or a developer looking to address cricket scores and statistics in your
-              app or website, you've come to the perfect spot! Your website or app can now provide something extra with
+              app or website, you&apos;ve come to the perfect spot! Your website or app can now provide something extra with
               all the real-time cricket data thanks to our Cricket API Scores and Statistics API at a marginal.
             </p>
+
 
             <div className="flex items-center justify-center gap-4 pt-4">
               <button className="bg-[#25397e] text-white px-8 py-3 rounded-md hover:bg-[#1a237e]/90 transition-colors">
@@ -274,9 +274,13 @@ export default function Page() {
               </h2>
             </div>
 
-            <p className="text-gray-600 leading-relaxed">
-              Cricket is more than simply a game; it's a way of life for its millions of devoted followers. If you're a fan of the game, a fantasy cricket player, or a developer looking to add live cricket scores and statistics to your app or website, you've come to the perfect spot. Your website or app can now provide consumers with up-to-the-minute cricket data thanks to our Cricket Feed Data API Score and Statistics API.
+            <p className="text-gray-700 max-w-4xl mx-auto text-sm md:text-base">
+              Cricket is more than simply a game; it&apos;s a way of life for millions of devoted followers. If you&apos;re a fan of
+              the game, a fantasy cricket player, or a developer looking to address cricket scores and statistics in your
+              app or website, you&apos;ve come to the perfect spot! Your website or app can now provide something extra with
+              all the real-time cricket data thanks to our Cricket API Scores and Statistics API at a marginal.
             </p>
+
 
 
             <button className="border flex gap-3 items-center  border-[#be5360] text-[#be5360] px-6 py-3 rounded-lg hover:bg-red-100 transition-colors">
@@ -415,7 +419,9 @@ export default function Page() {
               Cricket Feed <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Coverage</span>
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              All important tours, series, and domestic tournaments from across the world are included in the CricSportz cricket data stream coverage. Our cricket data stream may be utilized in a variety of applications, including but not limited to Livescore, fantasy apps, betting, and others. The coverage of the feed includes live scorecards, live fantasy metrics, as well as pregame and in-play odds from bookmakers.
+              All important tours, series, and domestic tournaments from across the world are included in the CricSportz cricket data stream coverage.
+              Our cricket data stream may be utilized in a variety of applications, including but not limited to Livescore, fantasy apps, betting, and others.
+              The coverage of the feed includes live scorecards, live fantasy metrics, as well as pregame and in-play odds from bookmakers.
             </p>
           </div>
         </div>
@@ -553,7 +559,7 @@ export default function Page() {
           </h2>
 
           <p className="text-gray-300 max-w-3xl mx-auto mb-16">
-            Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's
+            Lorem Ipsum Has Been The Industry&apos;s
             Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And
           </p>
 
@@ -572,7 +578,7 @@ export default function Page() {
                     </div>
 
                     {/* Testimonial text */}
-                    <p className="text-white text-lg mb-8 text-left">"{testimonial.text}"</p>
+                    <p className="text-white text-lg mb-8 text-left">&quot;{testimonial.text}&quot;</p>
 
                     {/* Author info */}
                     <div className="flex items-center  gap-4">
@@ -597,7 +603,7 @@ export default function Page() {
             {testimonials.map((_, index) => (
               <button
                 key={index}
-                className={` h-2 rounded-full transition-all ${index === 0 ? 'bg-white w-6' : 'w-2 bg-white/50'
+                className={` h-2 rounded-full transition-all ${index === 0 ? "bg-white w-6" : "w-2 bg-white/50"
                   }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
