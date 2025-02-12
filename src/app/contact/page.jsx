@@ -35,17 +35,17 @@ const Contact = () => {
             <section className="h-[60vh] flex pt-20  -mt-96 bg-white  ">
                 <div className="relative z-[1000]  h-full w-full ">
 
-                    <div className="absolute flex justify-center items-center -translate-x-1/2  z-0 left-1/2   w-full ">
+                    <div className="absolute flex z-10 justify-center items-center -translate-x-1/2  z-0 left-1/2   w-full ">
                         <Image
                             src="/contact (2).png"
                             alt="Background"
                             width={1000}
                             height={800}
-                            className="object-fir w-[600px] h-[400px] z-50"
+                            className="object-fir w-auto md:w-[600px] md:h-[400px] z-50"
                             priority
                         />
                     </div>
-                    <div className="absolute  items-center top-20 left-56  w-full ">
+                    <div className="absolute hidden md:block  items-center top-20 left-56  w-full ">
                         <Image
                             src="/contact (1).png"
                             alt="Background"
@@ -74,7 +74,7 @@ const Contact = () => {
                         {/* Decorative dots */}
 
 
-                        <div className=" bg-white   rounded-xl shadow-xl h-[80vh] p-8 w-full">
+                        <div className=" bg-white   rounded-xl shadow-xl md:h-[80vh] p-8 w-full">
                             <h2 className="text-xl font-semibold mb-2">Send us a Message</h2>
                             <p className="text-gray-500 text-sm mb-6">Fill in the form below</p>
 
@@ -85,7 +85,7 @@ const Contact = () => {
                                         alt="Background"
                                         width={1000}
                                         height={800}
-                                        className="object-fir w-[100px] h-auto z-50 ml-10"
+                                        className="object-fit w-[100px] h-auto z-50 ml-10"
                                         priority
                                     />
                                 </div>

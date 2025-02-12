@@ -64,7 +64,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleDrawerToggle}>
-            <Menu className="h-6 w-6" />
+            <Menu className="h-6 w-6 text-white" />
           </IconButton>
         </div>
 
@@ -85,18 +85,15 @@ const Header = () => {
             <List>
               {navItems.map((item) => (
                 <ListItem key={item.name} onClick={handleDrawerToggle}>
-                  <Link href={item.path} className={isHomePage ? "text-gray-700" : "text-white"}>
+                  <Link href={item.path} className={isHomePage ? "text-gray-700" : "text-gray-700"}>
                     <ListItemText primary={item.name} />
                   </Link>
                 </ListItem>
               ))}
               <ListItem>
                 <button
-                  className={`w-full border px-4 py-2 rounded-md transition-colors ${
-                    isHomePage
-                      ? "border-[#be5360] text-[#be5360] hover:bg-red-100"
-                      : "border-white text-white hover:bg-white/20"
-                  }`}
+                   onClick={()=>  router.push("/contact")}
+                 className={`w-full border px-4 py-2 rounded-md transition-colors border-[#be5360] text-[#be5360] hover:bg-red-100`}
                 >
                   Contact Us
                 </button>

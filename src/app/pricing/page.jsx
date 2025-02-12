@@ -40,7 +40,7 @@ const Pricing = () => {
             <section className="min-h-screen mb-64 relative pt-20 ">
                 <div className="wraper    flex flex-col space-y-6 mt-10 justify-center items-center z-auto text-white ">
                     <h1 className="text-5xl font-bold">Pricing Plan</h1>
-                    <span className={`${dmSerif.variable}   text-3xl font-thin font-dmSerif italic`}>
+                    <span className={`${dmSerif.variable} text-center  text-3xl font-thin font-dmSerif italic`}>
 
                     Cricsportz  API and Website & Apps</span>
                     <p className="max-w-4xl text-center">Cricket Live Score (Live Score, Live Scorecards, Ball by Ball, Lineups, Standings, Tours/Series Schedules,
@@ -64,7 +64,8 @@ const Pricing = () => {
                 <div className="absolute  z-0 left-0 -bottom-20">
                     <Image src="/review (5).png" alt="Background" width={600} height={200} className="object-fit" priority />
                 </div>
-                <div className="absolute w-full p-6 flex justify-center items-center -translate-x-1/2  z-0 left-1/2 -bottom-96  ">
+                <div className="absolute  flex justify-center items-center -translate-x-1/2 left-1/2 -bottom-40 sm:-bottom-60 md:-bottom-80 w-full">
+
                    <div className="px-6 py-16 bg-white rounded-xl">
 
                     <Image
@@ -72,7 +73,7 @@ const Pricing = () => {
                         alt="Background"
                         width={800}
                         height={600}
-                        className="object- w-[1000px] h-[600px] z-50"
+                        className="object-contain w-full max-w-[800px] sm:max-w-[1000px] md:max-w-[1200px] h-auto sm:h-[500px] md:h-[700px] z-50"
                         priority
                     />
                    </div>
