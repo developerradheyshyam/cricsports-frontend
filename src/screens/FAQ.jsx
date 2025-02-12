@@ -67,7 +67,7 @@ const FAQSection = () => {
     ];
 
     return (
-        <div className="max-w-7xl min-h-screen mx-auto px-4 py-16 sm:px-6 lg:px-8 flex flex-col space-y-10">
+        <div className="max-w-5xl min-h-screen mx-auto px-4 py-16 sm:px-6 lg:px-8 flex flex-col space-y-10">
             <div className="text-center lg:text-left flex flex-col justify-center items-center ">
                 <h2 className="text-4xl font-bold mb-6">
                     Frequently Asked Questions   <span className={`${dmSerif.variable}  text-red-600 text-3xl font-thin font-dmSerif italic`}>Cricsportz</span>

@@ -10,7 +10,7 @@ const Contact = () => {
                     <h1 className="text-5xl font-bold">Contact Us
                     </h1>
 
-                    <p className="max-w-7xl text-center"> <span className={`${dmSerif.variable}    font-thin font-dmSerif italic text-3xl `}>Get in touch today! and Your Inquiry </span></p>
+                    <p className="max-w-5xl text-center"> <span className={`${dmSerif.variable}    font-thin font-dmSerif italic text-3xl `}>Get in touch today! and Your Inquiry </span></p>
                 </div>
                 <div className="absolute inset-0 -z-10">
                     <Image src="/specialbg.png" alt="Background" fill className="object-fit" priority />
@@ -35,7 +35,7 @@ const Contact = () => {
             <section className="h-[60vh] flex pt-20  -mt-96 bg-white  ">
                 <div className="relative md:min-h-[60vh]  h-full w-full  overflow-x-hidden overflow-y-visible">
 
-                    <div className="absolute flex justify-center items-center -translate-x-1/2  z-0 left-1/2   w-full ">
+                    <div className="absolute flex justify-center items-center -translate-x-1/2  z-10 left-1/2   w-full ">
                         <Image
                             src="/contact (2).png"
                             alt="Background"
@@ -51,7 +51,7 @@ const Contact = () => {
                             alt="Background"
                             width={1000}
                             height={800}
-                            className="object-fir w-[450px] h-auto z-50"
+                            className="object-fir w-[450px] h-auto "
                             priority
                         />
                     </div>
@@ -61,13 +61,13 @@ const Contact = () => {
                             alt="Background"
                             width={1000}
                             height={800}
-                            className="object-fir w-[70px] h-auto z-50"
+                            className="object-fir w-[70px] h-auto "
                             priority
                         />
                     </div>
                 </div>
             </section>
-            <div className="w-full max-w-7xl  mx-auto px-4 py-12 min-h-screen mt-20">
+            <div className="w-full max-w-5xl  mx-auto px-4 py-12 min-h-screen mt-20">
                 <div className="flex flex-col  md:flex-row gap-6  justify-center relative">
                     {/* Left side - Contact Form */}
                     <div className=" md:w-[40%] ">

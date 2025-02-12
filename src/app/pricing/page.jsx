@@ -39,8 +39,8 @@ const Pricing = () => {
         <div className={`${urbanist.variable} font-urbanist  w-full   `}>
             <section className="min-h-screen mb-64 relative pt-20 ">
                 <div className="wraper    flex flex-col space-y-6 mt-10 justify-center items-center z-auto text-white ">
-                    <h1 className="text-5xl font-bold">Pricing Plan</h1>
-                    <span className={`${dmSerif.variable} text-center  text-3xl font-thin font-dmSerif italic`}>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">Pricing Plan</h1>
+                    <span className={`${dmSerif.variable} text-2xl sm:text-3xl font-thin font-dmSerif italic text-center px-1`}>
 
                     Cricsportz  API and Website & Apps</span>
                     <p className="max-w-4xl text-center">Cricket Live Score (Live Score, Live Scorecards, Ball by Ball, Lineups, Standings, Tours/Series Schedules,

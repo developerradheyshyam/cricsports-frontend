@@ -39,13 +39,13 @@ const About = () => {
     return (
         <div className={`${urbanist.variable} font-urbanist w-full`}>
             {/* Hero Section */}
-            <section className="min-h-screen relative pt-16 sm:pt-20 md:pt-24 ">
+            <section className="min-h-screen relative pt-24 ">
                 <div className="wraper flex flex-col space-y-4 sm:space-y-6 justify-center items-center z-10 text-white px-4 sm:px-6">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">About</h1>
                     <span className={`${dmSerif.variable} text-2xl sm:text-3xl font-thin font-dmSerif italic text-center`}>
                         Cricsportz API and Website & Apps
                     </span>
-                    <p className="max-w-7xl text-center">
+                    <p className="max-w-5xl text-center">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
 
@@ -169,7 +169,7 @@ const About = () => {
 
             {/* About Company Section */}
             <section className="min-h-screen flex items-center justify-center py-12 sm:py-16">
-                <div className="w-full max-w-7xl p-3 mx-auto">
+                <div className="w-full max-w-5xl p-3 mx-auto">
                     <div className="flex w-full flex-col items-center space-y-12 sm:space-y-20">
                         <div className="w-full px-4 flex flex-col lg:flex-row lg:justify-between lg:items-center space-y-8 lg:space-y-0">
                             <div className="w-full lg:w-1/2 space-y-2">
@@ -231,7 +231,7 @@ const About = () => {
 
             {/* Services Section */}
             <section className="min-h-screen flex justify-center py-12 sm:py-16">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="space-y-8 sm:space-y-12">
                         <div className="space-y-4 sm:space-y-6">
                             <p className="text-sm font-medium">Enterprise API Services Partner</p>

@@ -27,7 +27,7 @@ const BlogScreen = () => {
         },
       ];
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12">
+    <section className="max-w-5xl mx-auto px-4 py-12">
     {/* Header Section */}
     <div className="text-center mb-8">
       <h2 className="text-4xl font-bold mb-4">
@@ -42,19 +42,19 @@ const BlogScreen = () => {
     {/* Cards Grid */}
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {blogPosts.map((post) => (
-        <div key={post.id} className="bg-white overflow-hidden h-[80vh]">
+        <div key={post.id} className="flex justify-center flex-col items-center overflow-hidden h-[80vh] ">
           {/* Card Image Section */}
           <div className="overflow-hidden rounded-xl h-80 bg-purple-900">
             {/* Stadium Light Effects */}
             <img
               src="/liveCricket.png"
               alt="Cricket API"
-              className="w-full h- object-fit"
+              className="w-full h object-fit"
             />
           </div>
 
           {/* Card Content */}
-          <div className="py-6">
+          <div className="py-4 ">
             {/* Date and Time */}
             <div className="flex items-center gap-2 text-gray-500 mb-4">
               <div className="w-4 h-4 rounded-lg flex items-center justify-center">

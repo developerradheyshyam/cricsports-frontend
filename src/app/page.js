@@ -161,12 +161,12 @@ export default function Page() {
   );
 
   const FeatureCard = ({ feature }) => (
-    <div className="bg-white/10 h-32 sm:h-40 backdrop-blur-lg rounded-xl sm:rounded-2xl p-4 sm:p-6 group hover:bg-white/20 transition-all duration-300">
+    <div className="bg-white/30 h-32  backdrop-blur-lg rounded-xl sm:rounded-2xl p-4 sm:p-6 group hover:bg-white/20 transition-all duration-300">
       <div className="flex flex-col justify-between gap-3 h-full">
         <div className="p-2">
-          <Image src="/shuttle 1.png" alt="Feature icon" width={40} height={40} className="object-contain" />
+          <Image src="/shuttle 1.png" alt="Feature icon" width={30} height={30} className="object-contain" />
         </div>
-        <span className="text-white text-sm sm:text-base font-medium">{feature.title}</span>
+        <span className="text-white text-sm font-medium">{feature.title}</span>
       </div>
     </div>
   );
@@ -176,7 +176,7 @@ export default function Page() {
       <div className="mb-4">
         <Image src="/cup.png" alt="Service icon" width={50} height={50} className="object-contain" />
       </div>
-      <h3 className="text-md sm:text-xl md:max-w-[70%] font-semibold mb-4">
+      <h3 className="text-md sm:text-xl md:max-w-[80%] font-semibold mb-4">
         {service.title}
       </h3>
       <button className="flex items-center gap-2 text-sm text-red-600 border border-red-600 rounded-md w-fit px-4 py-2 hover:bg-red-50 transition-colors">
@@ -295,7 +295,7 @@ export default function Page() {
           </div>
 
           {/* Hero Image - Responsive container */}
-          <div className="w-full h-[400px] md:h-[700px] flex justify-center max-w-7xl">
+          <div className="w-full h-[400px] md:h-[700px] flex justify-center max-w-5xl">
             <Image
               src="/herobg.png"
               alt="Hero background"
@@ -308,9 +308,9 @@ export default function Page() {
       </div>
       <div className="relative w-full py-8 sm:py-12 md:py-16 px-4 overflow-hidden">
         {/* Content Container - Adjusted padding and height for mobile */}
-        <div className="relative max-w-7xl mx-auto z-10 min-h-screen sm:h-auto">
+        <div className="relative max-w-5xl mx-auto z-10 min-h-screen sm:h-auto">
           {/* Header Section - Responsive text and spacing */}
-          <div className="max-w-7xl mx-auto mb-8 sm:mb-12 md:mb-16 text-center px-4">
+          <div className="max-w-5xl mx-auto mb-8 sm:mb-12 md:mb-16 text-center px-4">
             <h2 className={`${urbanist.variable} text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight`}>
               Apps Using{' '}
               <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
@@ -366,7 +366,7 @@ export default function Page() {
       </div>
       <div className="container mx-auto px-4 py-8 sm:py-12 flex flex-col items-center space-y-8 sm:space-y-12 justify-center">
         {/* First Section */}
-        <div className="max-w-7xl w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Mobile App Preview - Full width on mobile, half on desktop */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] w-full max-w-[500px]">
@@ -415,7 +415,7 @@ export default function Page() {
         </div>
 
         {/* Second Section */}
-        <div className="max-w-7xl w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left Column - Title */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <div className="relative flex items-center h-auto sm:h-64 w-full">
@@ -444,7 +444,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 flex justify-center items-center min-h-screen py-8 sm:py-12">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 flex justify-center items-center min-h-screen py-8 sm:py-12">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {cards.map((card, index) => (
             <div
@@ -552,7 +552,7 @@ export default function Page() {
           ))}
         </div>
       </div>
-      <div className="max-w-7xl container mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
+      <div className="max-w-5xl container mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
         {/* Header Section */}
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
@@ -571,14 +571,14 @@ export default function Page() {
         </div>
 
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start lg:items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start lg:items-center  md:h-[80vh]">
           {/* Features List */}
           <div className="space-y-4 sm:space-y-6">
             {cricketFeatures.map((feature, index) => (
               <div
                 key={index}
-                className={`
-                rounded-xl sm:rounded-2xl p-4 sm:p-6 
+                className={` h-30
+                rounded-lg p-4 sm:px-4 sm:py-2
                 ${feature.bgColor} 
                 transition-transform hover:scale-[1.02] sm:hover:scale-105
                 cursor-pointer
@@ -590,7 +590,7 @@ export default function Page() {
                     <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-600 text-sm sm:text-base">
+                    <p className="text-gray-600 text-sm ">
                       {feature.description}
                     </p>
                   </div>
@@ -610,9 +610,9 @@ export default function Page() {
 
           {/* Image Section */}
           <div className="lg:pl-6 xl:pl-12 mt-8 lg:mt-0 h-full ">
-            <div className="relative rounded-2xl sm:rounded-3xl border-2  h-full  shadow-lg">
+            <div className="relative rounded-2xl sm:rounded-3xl border-2 h-full  shadow-lg">
               {/* Main Image */}
-              <div className="relative w-full h-full min-h-[60vh]">
+              <div className="relative w-full h-full">
                 <Image
                   src="/cricketStats.png"
                   alt="Cricket API Dashboard"
@@ -642,7 +642,7 @@ export default function Page() {
         </div>
       </div>
       <div className="w-full bg-[#FFF8EE] py-8 sm:py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-16 flex flex-col justify-center items-center">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-16 flex flex-col justify-center items-center">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
               Cricket Feed{' '}
@@ -665,7 +665,7 @@ export default function Page() {
             alt="Cricket API Dashboard"
             width={1200}
             height={600}
-            className="w-full max-w-7xl h-auto object-contain"
+            className="w-full max-w-5xl h-auto object-contain"
           />
         </div>
       </div>
@@ -681,18 +681,18 @@ export default function Page() {
         <BackgroundDecorations />
 
         {/* Main Content */}
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32 items-center">
+        <div className="max-w-5xl mx-auto relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-26 items-center ">
             {/* Left side with illustration */}
-            <div className="relative order-2 lg:order-1">
+            <div className="relative w-[90%] order-2 lg:order-1 ">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] bg-pink-200/20 rounded-full blur-xl" />
 
               <div className="relative">
                 <Image
                   src="/Banner-girl-1.png"
                   alt="Support Representative"
-                  width={600}
-                  height={600}
+                  width={400}
+                  height={400}
                   className="relative z-10 w-full h-auto"
                 />
 
@@ -702,14 +702,14 @@ export default function Page() {
             </div>
 
             {/* Right side content */}
-            <div className="tracking-wide order-1 lg:order-2">
-              <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-white mb-8 sm:mb-12">
+            <div className="tracking-wide order-1 lg:order-2 w-full  ">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-8 ">
                 Why Choose{' '}
                 <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
                   Cricsportz
                 </span>{' '}
                 The Best
-                <br />
+                
                 <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
                   Cricket API
                 </span>{' '}
@@ -717,7 +717,7 @@ export default function Page() {
               </h2>
 
               {/* Features Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-x-6 sm:gap-y-4">
                 {[...features, ...features].map((feature, index) => (
                   <FeatureCard key={index} feature={feature} />
                 ))}
@@ -749,14 +749,14 @@ export default function Page() {
 
           {/* Testimonials container - modified for better mobile scrolling */}
           <div className="relative w-full overflow-hidden flex   justify-center ">
-            <div className="flex max-w-7xl justify-center  snap-x snap-mandatory overflow-x-auto hide-scrollbar">
+            <div className="flex max-w-5xl justify-center  snap-x snap-mandatory overflow-x-auto hide-scrollbar">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
                   className="flex-none w-full sm:w-[85%] md:w-[45%] lg:w-[32%] snap-center px-3 sm:px-4"
                 >
                   {/* Individual testimonial card - adjusted padding and height */}
-                  <div className="bg-white/10 backdrop-blur-lg flex flex-col justify-between border-t-[2px] border-t-gray-500 border-l-[2px] border-l-gray-500 rounded-2xl p-6 sm:p-8 h-auto min-h-[20rem] sm:min-h-[22rem]">
+                  <div className="bg-white/10 backdrop-blur-lg flex flex-col justify-between border-t-[2px] border-t-gray-500 border-l-[2px] border-l-gray-500 rounded-2xl p-6 sm:p-6 h-auto min-h-[18rem] sm:min-h-[20rem]">
                     {/* Star rating - adjusted size and spacing */}
                     <div className="flex space-x-1 mb-4 sm:mb-6  ">
                       {[...Array(testimonial.rating)].map((_, i) => (
@@ -807,7 +807,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <section className="max-w-7xl mx-auto px-4 py-8 sm:py-12">
+      <section className="max-w-5xl mx-auto px-4 py-8 sm:py-12">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8">
           <div className=" text-2xl sm:text-3xl mb-4 sm:mb-0">
             <h2 className="font-semibold">Explore Our Data Services</h2>

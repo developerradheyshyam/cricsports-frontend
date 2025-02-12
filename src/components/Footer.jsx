@@ -5,7 +5,7 @@ const Footer = () => {
   return (
 <footer className="bg-[#000229] text-white ">
   {/* Newsletter Section */}
-  <div className=" max-w-7xl mx-auto px-4 py-8 border-b border-gray-800">
+  <div className=" max-w-5xl mx-auto px-4 py-8 border-b border-gray-800">
     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
       <div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Get Our Newsletter</h2> {/* Adjusted font size for different breakpoints */}
@@ -30,7 +30,7 @@ const Footer = () => {
   </div>
 
   {/* Main Footer Content */}
-  <div className="max-w-7xl mx-auto px-4 py-12">
+  <div className="max-w-5xl mx-auto px-4 py-12">
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
       {/* Logo and About */}
       <div className="space-y-4">
