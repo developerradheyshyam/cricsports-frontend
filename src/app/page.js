@@ -1,6 +1,6 @@
 import { dmSerif, urbanist } from "@/utils/fonts"
 import Image from "next/image"
-import { ArrowRight, Calendar, CheckCircle, Clock, MessageSquare, PresentationIcon, Presentation, Star, Rocket } from "lucide-react"
+import { ArrowRight, Calendar, CheckCircle, Clock, MessageSquare, PresentationIcon, Presentation, Star, Rocket, MessageSquareIcon } from "lucide-react"
 import Blog from "@/screens/Blog";
 
 export default function Page() {
@@ -139,6 +139,102 @@ export default function Page() {
     { title: 'Unmatchable Quality' },
     { title: 'Professional Team' },
   ];
+  const BackgroundDecorations = () => (
+    <>
+      <div className="absolute z-0 -top-20 right-10 hidden sm:block">
+        <Image src="/review (1).png" alt="Decoration 1" width={800} height={200} className="object-contain" />
+      </div>
+      <div className="absolute inset-0 z-0">
+        <Image src="/specialbg.png" alt="Background" fill className="object-fit" priority />
+      </div>
+      <div className="absolute  z-0 -top-20 right-10">
+        <Image src="/review (1).png" alt="Background" width={800} height={200} className="object-fit" priority />
+      </div>
+      <div className="absolute  z-0 -top-64 left-0">
+        <Image src="/review (2).png" alt="Background" width={600} height={200} className="object-fit" priority />
+      </div>
+      <div className="absolute  z-0 right-10 bottom-0">
+        <Image src="/review (3).png" alt="Background" width={100} height={100} className="object-fit" priority />
+      </div>
+      <div className="absolute  z-0 right-0 bottom-30">
+        <Image src="/review (4).png" alt="Background" width={600} height={200} className="object-fit" priority />
+      </div>
+      <div className="absolute  z-0 left-0 -bottom-20">
+        <Image src="/review (5).png" alt="Background" width={600} height={200} className="object-fit" priority />
+      </div>
+      {/* Add other decoration elements... */}
+    </>
+  );
+
+  const ChatWidget = () => (
+    <div className="absolute top-1/2 right-0 bg-white rounded-lg p-4 shadow-xl w-64 hidden sm:block">
+      <div className="flex items-center gap-2 mb-3">
+        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+          <MessageSquareIcon />
+        </div>
+        <span className="font-semibold">Chat With Our Expert</span>
+      </div>
+      <div className="space-y-2 mb-3">
+        <div className="h-2 bg-gray-200 rounded w-full"></div>
+        <div className="h-2 bg-gray-200 rounded w-3/4"></div>
+      </div>
+      <button className="w-full bg-blue-500 text-white rounded py-2 text-sm">
+        Get Started
+      </button>
+    </div>
+  );
+
+  const FeatureCard = ({ feature }) => (
+    <div className="bg-white/10 h-32 sm:h-40 backdrop-blur-lg rounded-xl sm:rounded-2xl p-4 sm:p-6 group hover:bg-white/20 transition-all duration-300">
+      <div className="flex flex-col justify-between gap-3 h-full">
+        <div className="p-2">
+          <Image src="/shuttle 1.png" alt="Feature icon" width={40} height={40} className="object-contain" />
+        </div>
+        <span className="text-white text-sm sm:text-base font-medium">{feature.title}</span>
+      </div>
+    </div>
+  );
+
+  const ServiceCard = ({ service }) => (
+    <div className="bg-white flex justify-evenly flex-col rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow h-72 sm:h-80">
+      <div className="mb-4">
+        <Image src="/cup.png" alt="Service icon" width={50} height={50} className="object-contain" />
+      </div>
+      <h3 className="text-lg sm:text-xl max-w-[70%] font-semibold mb-4">
+        {service.title}
+      </h3>
+      <button className="flex items-center gap-2 text-sm text-red-600 border border-red-600 rounded-md w-fit px-4 py-2 hover:bg-red-50 transition-colors">
+        <span>View More</span>
+        <ArrowRight className="w-4 h-4 bg-red-500 text-white p-1 rounded-full" />
+      </button>
+    </div>
+  );
+
+  const FeaturedServiceCard = () => (
+    <div className="relative overflow-hidden h-[400px] sm:h-[500px] rounded-lg p-6 text-white md:col-span-2 lg:col-span-1">
+      <div className="absolute inset-0 -z-10">
+        <Image src="/sv-bg.png" alt="Featured background" fill className="object-cover" />
+      </div>
+      <div className="relative z-10">
+        <h3 className="text-lg font-medium mb-2">API Features Management</h3>
+        <p className="mb-4 text-2xl sm:text-3xl font-medium">
+          Using our Cricket API Cricket! Grow any Current System
+        </p>
+        <button className="text-white rounded-full px-6 py-2 mb-8 transition-colors bg-[#8162E8]">
+          Work With Us
+        </button>
+      </div>
+      <div className="absolute bottom-0 left-0 right-0">
+        <Image
+          src="/sv-dashbord.png"
+          alt="API Features Dashboard"
+          width={600}
+          height={400}
+          className="w-full h-auto"
+        />
+      </div>
+    </div>
+  );
   return (
     <main className={`${urbanist.variable} font-urbanist min-h-screen w-full relative `}>
       <div className="relative pt-20 md:pt-32">
@@ -481,272 +577,239 @@ export default function Page() {
         </div>
       </div>
       <div className="max-w-7xl container mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
-      {/* Header Section */}
-      <div className="text-center mb-8 sm:mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
-          Features of Our{' '}
-          <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
-            Real-Time Cricket
-          </span>{' '}
-          API
-        </h2>
-        <p className="max-w-3xl mx-auto text-gray-600 text-sm sm:text-base leading-relaxed px-4">
-          In order to build incredible cricket applications, accurate cricket documentation was required. 
-          Discover at CricSportz the reasons why our clients are so satisfied with our goods. 
-          The most important advantages that our live Cricket API has over its rivals are outlined 
-          in the following paragraphs
-        </p>
-      </div>
+        {/* Header Section */}
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
+            Features of Our{' '}
+            <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+              Real-Time Cricket
+            </span>{' '}
+            API
+          </h2>
+          <p className="max-w-3xl mx-auto text-gray-600 text-sm sm:text-base leading-relaxed px-4">
+            In order to build incredible cricket applications, accurate cricket documentation was required.
+            Discover at CricSportz the reasons why our clients are so satisfied with our goods.
+            The most important advantages that our live Cricket API has over its rivals are outlined
+            in the following paragraphs
+          </p>
+        </div>
 
-      {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start lg:items-center">
-        {/* Features List */}
-        <div className="space-y-4 sm:space-y-6">
-          {cricketFeatures.map((feature, index) => (
-            <div
-              key={index}
-              className={`
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start lg:items-center">
+          {/* Features List */}
+          <div className="space-y-4 sm:space-y-6">
+            {cricketFeatures.map((feature, index) => (
+              <div
+                key={index}
+                className={`
                 rounded-xl sm:rounded-2xl p-4 sm:p-6 
                 ${feature.bgColor} 
                 transition-transform hover:scale-[1.02] sm:hover:scale-105
                 cursor-pointer
               `}
-            >
-              <div className="flex gap-3 sm:gap-4">
-                <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-green-500 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm sm:text-base">
-                    {feature.description}
-                  </p>
+              >
+                <div className="flex gap-3 sm:gap-4">
+                  <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-green-500 flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm sm:text-base">
+                      {feature.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
 
-          <button className="
+            <button className="
             w-full sm:w-auto mt-6 px-6 sm:px-8 py-3 
             border-2 border-red-600 text-red-600 font-thin 
             rounded-lg hover:bg-red-600 hover:text-white 
             transition-colors text-sm sm:text-base
           ">
-            View All Features
-          </button>
-        </div>
+              View All Features
+            </button>
+          </div>
 
-        {/* Image Section */}
-        <div className="lg:pl-6 xl:pl-12 mt-8 lg:mt-0">
-          <div className="relative rounded-2xl sm:rounded-3xl border-2 border-gray-200 shadow-lg">
-            {/* Main Image */}
-            <div className="relative w-full aspect-[4/3]">
-              <Image
-                src="/cricketStats.png"
-                alt="Cricket API Dashboard"
-                fill
-                className="object-cover rounded-2xl sm:rounded-3xl"
-                priority
-              />
-            </div>
-            
-            {/* Floating Stats Image */}
-            <div className="
+          {/* Image Section */}
+          <div className="lg:pl-6 xl:pl-12 mt-8 lg:mt-0">
+            <div className="relative rounded-2xl sm:rounded-3xl border-2 border-gray-200 shadow-lg">
+              {/* Main Image */}
+              <div className="relative w-full aspect-[4/3]">
+                <Image
+                  src="/cricketStats.png"
+                  alt="Cricket API Dashboard"
+                  fill
+                  className="object-cover rounded-2xl sm:rounded-3xl"
+                  priority
+                />
+              </div>
+
+              {/* Floating Stats Image */}
+              <div className="
               absolute -bottom-6 sm:-bottom-10 -left-6 sm:-left-10 
               w-28 sm:w-40 aspect-square
               transform hover:scale-105 transition-transform
               z-10
             ">
-              <Image
-                src="/smallstats.png"
-                alt="Cricket Statistics"
-                fill
-                className="object-contain"
-                priority
-              />
+                <Image
+                  src="/smallstats.png"
+                  alt="Cricket Statistics"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-      <div className="w-full bg-[#FFF8EE] min-h-screen   mx-auto py-16">
-        <div className="max-w-7xl mx-auto px-4 py-16 flex flex-col justify-center items-center">
+      <div className="w-full bg-[#FFF8EE] py-8 sm:py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-16 flex flex-col justify-center items-center">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Cricket Feed <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Coverage</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
+              Cricket Feed{' '}
+              <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+                Coverage
+              </span>
             </h2>
-            <p className="text-gray-600 leading-relaxed">
-              All important tours, series, and domestic tournaments from across the world are included in the CricSportz cricket data stream coverage.
-              Our cricket data stream may be utilized in a variety of applications, including but not limited to Livescore, fantasy apps, betting, and others.
-              The coverage of the feed includes live scorecards, live fantasy metrics, as well as pregame and in-play odds from bookmakers.
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+              All important tours, series, and domestic tournaments from across the world are included
+              in the CricSportz cricket data stream coverage. Our cricket data stream may be utilized
+              in a variety of applications, including but not limited to Livescore, fantasy apps,
+              betting, and others. The coverage of the feed includes live scorecards, live fantasy
+              metrics, as well as pregame and in-play odds from bookmakers.
             </p>
           </div>
         </div>
-        <div className="flex justify-center relative  ">
-          <img
+        <div className="flex justify-center relative px-4">
+          <Image
             src="/teamGraph.png"
             alt="Cricket API Dashboard"
-            className="max-w-7xl h-auto"
+            width={1200}
+            height={600}
+            className="w-full max-w-7xl h-auto object-contain"
           />
         </div>
       </div>
-      <div className="min-h-screen bg-[#1F242A] py-20 px-4 relative overflow-hidden flex justify-center items-center">
-        {/* Background effects */}
-        <div className="absolute inset-0 z-0">
-          <Image src="/specialbg.png" alt="Background" fill className="object-fit" priority />
-        </div>
-        <div className="absolute  z-0 -top-20 right-10">
-          <Image src="/review (1).png" alt="Background" width={800} height={200} className="object-fit" priority />
-        </div>
-        <div className="absolute  z-0 -top-64 left-0">
-          <Image src="/review (2).png" alt="Background" width={600} height={200} className="object-fit" priority />
-        </div>
-        <div className="absolute  z-0 right-10 bottom-0">
-          <Image src="/review (3).png" alt="Background" width={100} height={100} className="object-fit" priority />
-        </div>
-        <div className="absolute  z-0 right-0 bottom-30">
-          <Image src="/review (4).png" alt="Background" width={600} height={200} className="object-fit" priority />
-        </div>
-        <div className="absolute  z-0 left-0 -bottom-20">
-          <Image src="/review (5).png" alt="Background" width={600} height={200} className="object-fit" priority />
-        </div>
-        {/* Main container */}
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-32 items-center">
-            {/* Left side with illustration */}
-            <div className="relative">
-              {/* Circle background */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-pink-200/20 rounded-full blur-xl" />
 
-              {/* Placeholder for the main image */}
+      {/* Dark Features Section */}
+      <div className="min-h-screen bg-[#1F242A] py-12 sm:py-16 md:py-20 px-4 relative overflow-hidden">
+        {/* Background Images */}
+        <div className="absolute inset-0 z-0">
+          <Image src="/specialbg.png" alt="Background pattern" fill className="object-cover opacity-50" />
+        </div>
+
+        {/* Background Decorative Elements */}
+        <BackgroundDecorations />
+
+        {/* Main Content */}
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32 items-center">
+            {/* Left side with illustration */}
+            <div className="relative order-2 lg:order-1">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] bg-pink-200/20 rounded-full blur-xl" />
+
               <div className="relative">
-                <img
+                <Image
                   src="/Banner-girl-1.png"
                   alt="Support Representative"
-                  className="relative z-10"
+                  width={600}
+                  height={600}
+                  className="relative z-10 w-full h-auto"
                 />
 
-                {/* Chat widget overlay */}
-                <div className="absolute top-1/2 right-0 bg-white rounded-lg p-4 shadow-xl w-64">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                      <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-                      </svg>
-                    </div>
-                    <span className="font-semibold">Chat With Our Expert</span>
-                  </div>
-                  <div className="space-y-2 mb-3">
-                    <div className="h-2 bg-gray-200 rounded w-full"></div>
-                    <div className="h-2 bg-gray-200 rounded w-3/4"></div>
-                  </div>
-                  <button className="w-full bg-blue-500 text-white rounded py-2 text-sm">
-                    Get Started
-                  </button>
-                </div>
+                {/* Chat Widget */}
+                <ChatWidget />
               </div>
             </div>
 
-            {/* Right side with heading and features */}
-            <div className="tracking-wide">
-              <h2 className="text-2xl md:text-4xl font-bold text-white mb-12">
-                Why Choose <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Cricsportz</span> The Best
+            {/* Right side content */}
+            <div className="tracking-wide order-1 lg:order-2">
+              <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-white mb-8 sm:mb-12">
+                Why Choose{' '}
+                <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+                  Cricsportz
+                </span>{' '}
+                The Best
                 <br />
-                <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Cricket API</span> Service Provider
+                <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+                  Cricket API
+                </span>{' '}
+                Service Provider
               </h2>
 
-              {/* Features grid */}
-              <div className="grid md:grid-cols-2 gap-6">
-                {features.map((feature, index) => (
-                  <div
-                    key={index}
-                    className="bg-white/10 h-40 backdrop-blur-lg rounded-2xl p-6 group hover:bg-white/20 transition-all duration-300"
-                  >
-                    <div className="flex flex-col justify-between  gap-3 h-full">
-                      <div className="p-2 ">
-                        <Image src="/shuttle 1.png" alt="Background" width={50} height={50} className="object-fit" priority />
-                      </div>
-                      <span className="text-white font-medium">{feature.title}</span>
-                    </div>
-                  </div>
+              {/* Features Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                {[...features, ...features].map((feature, index) => (
+                  <FeatureCard key={index} feature={feature} />
                 ))}
-                {features.map((feature, index) => (
-                  <div
-                    key={index}
-                    className="bg-white/10 h-40 backdrop-blur-lg rounded-2xl p-6 group hover:bg-white/20 transition-all duration-300"
-                  >
-                    <div className="flex flex-col justify-between  gap-3 h-full">
-                      <div className="p-2 ">
-                        <Image src="/shuttle 1.png" alt="Background" width={50} height={50} className="object-fit" priority />
-                      </div>
-                      <span className="text-white font-medium">{feature.title}</span>
-                    </div>
-                  </div>
-                ))}
-
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="min-h-screen bg-[#1F242A] py-20 px-4 relative overflow-hidden flex justify-center items-center">
-        {/* Background effects */}
-        <div className="absolute inset-0 z-0">
-          <Image src="/specialbg.png" alt="Background" fill className="object-fit" priority />
-        </div>
-        <div className="absolute  z-0 -top-20 right-10">
-          <Image src="/review (1).png" alt="Background" width={800} height={200} className="object-fit" priority />
-        </div>
-        <div className="absolute  z-0 -top-64 left-0">
-          <Image src="/review (2).png" alt="Background" width={600} height={200} className="object-fit" priority />
-        </div>
-        <div className="absolute  z-0 right-10 bottom-0">
-          <Image src="/review (3).png" alt="Background" width={100} height={100} className="object-fit" priority />
-        </div>
-        <div className="absolute  z-0 right-0 bottom-30">
-          <Image src="/review (4).png" alt="Background" width={600} height={200} className="object-fit" priority />
-        </div>
-        <div className="absolute  z-0 left-0 -bottom-20">
-          <Image src="/review (5).png" alt="Background" width={600} height={200} className="object-fit" priority />
-        </div>
-        {/* Content container */}
-        <div className="max-w-7xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Our Happy Users & Their <span className={`${dmSerif.variable} text-red-600  font-thin font-dmSerif italic`}>Cricsportz</span> API
+      <div className="min-h-screen bg-[#1F242A] py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 relative overflow-hidden flex justify-center items-center">
+        {/* Background decorations component remains unchanged */}
+        <BackgroundDecorations />
+
+        {/* Content container - adjusted max-width and padding for different screens */}
+        <div className="w-full max-w-[90rem] mx-auto text-center relative z-10">
+          {/* Heading - responsive font sizes and spacing */}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 px-4 leading-tight">
+            Our Happy Users & Their{' '}
+            <span className={`${dmSerif.variable} text-red-600 font-thin font-dmSerif italic`}>
+              Cricsportz
+            </span>{' '}
+            API
           </h2>
 
-          <p className="text-gray-300 max-w-3xl mx-auto mb-16">
-            Lorem Ipsum Has Been The Industry&apos;s
-            Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And
+          {/* Subheading - adjusted width and text size */}
+          <p className="text-base sm:text-lg text-gray-300 max-w-xl sm:max-w-2xl md:max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16 px-4">
+            Lorem Ipsum Has Been The Industry&apos;s Standard Dummy Text Ever Since The 1500s, When An
+            Unknown Printer Took A Galley Of Type And
           </p>
 
-          {/* Testimonials slider */}
-          <div className="flex overflow-hidden  w-full">
-            <div className="flex sapce-x-3 "
-            >
+          {/* Testimonials container - modified for better mobile scrolling */}
+          <div className="relative w-full overflow-hidden">
+            <div className="flex snap-x snap-mandatory overflow-x-auto hide-scrollbar">
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="flex-1 px-4">
-                  <div className="bg-white/10 backdrop-blur-lg flex justify-evenly flex-col  border-t-[2px] border-t-gray-500 border-l-[2px] border-l-gray-500  rounded-2xl p-8 mx-auto max-w-lg h-96">
-                    {/* Star rating */}
-                    <div className="flex space-x-1 mb-6">
+                <div
+                  key={index}
+                  className="flex-none w-full sm:w-[85%] md:w-[45%] lg:w-[32%] snap-center px-3 sm:px-4"
+                >
+                  {/* Individual testimonial card - adjusted padding and height */}
+                  <div className="bg-white/10 backdrop-blur-lg flex flex-col justify-between border-t-[2px] border-t-gray-500 border-l-[2px] border-l-gray-500 rounded-2xl p-6 sm:p-8 h-auto min-h-[24rem] sm:min-h-[26rem]">
+                    {/* Star rating - adjusted size and spacing */}
+                    <div className="flex space-x-1 mb-4 sm:mb-6">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                        <Star
+                          key={i}
+                          className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400"
+                        />
                       ))}
                     </div>
 
-                    {/* Testimonial text */}
-                    <p className="text-white text-lg mb-8 text-left">"{testimonial.text}"</p>
+                    {/* Testimonial text - responsive font size and spacing */}
+                    <p className="text-base sm:text-lg text-white mb-6 sm:mb-8 text-left">
+                      "{testimonial.text}"
+                    </p>
 
-                    {/* Author info */}
-                    <div className="flex items-center  gap-4">
+                    {/* Author info - adjusted spacing and image size */}
+                    <div className="flex items-center gap-3 sm:gap-4">
                       <img
                         src="/Avatar.png"
                         alt={testimonial.author}
-                        className="w-12 h-12 rounded-full"
+                        className="w-10 h-10 sm:w-12 sm:h-12 rounded-full"
                       />
                       <div className="text-left">
-                        <h4 className="text-white font-semibold">{testimonial.author}</h4>
-                        <p className="text-gray-400 text-sm">{testimonial.position}</p>
+                        <h4 className="text-white font-semibold text-base sm:text-lg">
+                          {testimonial.author}
+                        </h4>
+                        <p className="text-gray-400 text-sm sm:text-base">
+                          {testimonial.position}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -755,12 +818,12 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Navigation dots */}
-          <div className="flex justify-center gap-2 mt-8">
+          {/* Navigation dots - increased touch target size */}
+          <div className="flex justify-center gap-2 mt-6 sm:mt-8">
             {testimonials.map((_, index) => (
               <button
                 key={index}
-                className={` h-2 rounded-full transition-all ${index === 0 ? "bg-white w-6" : "w-2 bg-white/50"
+                className={`h-2 sm:h-3 rounded-full transition-all touch-target-adjust ${index === 0 ? "bg-white w-6 sm:w-8" : "w-2 sm:w-3 bg-white/50"
                   }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
@@ -768,13 +831,14 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <section className="max-w-7xl mx-auto px-4 py-12">
-        {/* Header Section */}
-        <div className="flex justify-between items-center mb-8">
-          <div className="text-3xl">
-            <h2 className=" font-semibold">Explore Our Data Services</h2>
+      <section className="max-w-7xl mx-auto px-4 py-8 sm:py-12">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8">
+          <div className="text-2xl sm:text-3xl mb-4 sm:mb-0">
+            <h2 className="font-semibold">Explore Our Data Services</h2>
             <div className="flex items-center gap-2">
-              <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Cricket API</span>
+              <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+                Cricket API
+              </span>
               <span className="font-semibold">Multiple Products</span>
             </div>
           </div>
@@ -784,53 +848,38 @@ export default function Page() {
           </button>
         </div>
 
-        {/* Grid Layout */}
-        <div className="flex flex-col gap-6">
-          {/* First 5 Service Cards */}
-          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-6">
-            {services.map((service) => (
-              <div
-                key={service.id}
-                className="bg-white flex justify-evenly flex-col rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow h-80"
-              >
-                <div className="mb-4">
-                  <Image src="/cup.png" alt="Background" width={50} height={50} className="object-fit" priority />
-                </div>
-                <h3 className="text-xl max-w-[70%] font-semibold mb-4">
-                  {service.title}
-                </h3>
-                <button className="flex space-x-3 items-center gap-1 text-sm text-red-600 border border-red-600 rounded-md max-w-[40%] px-4 py-2  hover:bg-red-50 transition-colors">
-                  <span>View More</span>
-                  <ArrowRight className="w-4 h-4 bg-red-500 text-white flex justify-center items-center p-1 rounded-full" />
-                </button>
-              </div>
-            ))}
-            <div className="relative overflow-hidden h-[60vh] rounded-lg p-6 text-white md:col-span-2 lg:col-span-1 lg:row-span-2">
-              <div className="absolute inset-0 -z-10">
-                <Image src="/sv-bg.png" alt="Background" fill className="object-fit" priority />
-              </div>
-              <h3 className="text-lg font-medium mb-2">API Features Management</h3>
-              <p className="mb-4 text-3xl font-medium ">Using our Cricket API Cricket! Grow any Current System</p>
-              <button className=" text-white rounded-full px-6 py-2 mb-8 transition-colors bg-[#8162E8]">
-                Work With Us
-              </button>
-              <div className="mt-4  w-full h-full">
-                <img
-                  src="/sv-dashbord.png "
-                  alt="API Features Dashboard"
-                  className="w-full h-auto rounded-lg absolute bottom-0"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* API Features Card */}
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service) => (
+            <ServiceCard key={service.id} service={service} />
+          ))}
+          <FeaturedServiceCard />
         </div>
       </section>
-
       <Blog />
     </main>
   )
 }
+const styles = `
+  .touch-target-adjust {
+    position: relative;
+  }
+  .touch-target-adjust::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
 
