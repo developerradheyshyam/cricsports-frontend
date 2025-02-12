@@ -1,5 +1,3 @@
-import BlogScreen from "@/screens/Blog"
-import FAQSection from "@/screens/FAQ"
 import { dmSerif, urbanist } from "@/utils/fonts"
 import { ArrowRight, ChevronLeft, ChevronRight, Heart, PlayIcon } from "lucide-react"
 import Image from "next/image"
@@ -224,7 +222,7 @@ const Blog = () => {
                                                 <span>Read More</span>
                                                 <ArrowRight className="w-4 h-4 bg-red-600 text-white flex justify-center items-center p-1 rounded-full" />
                                             </button>
-                                            
+
                                         </div>
                                     </div>
                                 </div>

@@ -5,11 +5,12 @@ import { Drawer, List, ListItem, ListItemText, IconButton } from "@mui/material"
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname(); // Get the current route
-
+  const router = useRouter()
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -54,6 +55,7 @@ const Header = () => {
                 ? "border-[#be5360] text-[#be5360] hover:bg-red-100"
                 : "border-white text-white hover:bg-white/20"
             }`}
+           onClick={()=>  router.push("/contact")}
           >
             Contact Us
           </button>

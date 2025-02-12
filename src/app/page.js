@@ -447,85 +447,85 @@ export default function Page() {
         <div className="absolute  z-0 left-0 -bottom-20">
           <Image src="/review (5).png" alt="Background" width={600} height={200} className="object-fit" priority />
         </div>
-      {/* Main container */}
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid lg:grid-cols-2 gap-32 items-center">
-          {/* Left side with illustration */}
-          <div className="relative">
-            {/* Circle background */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-pink-200/20 rounded-full blur-xl" />
-            
-            {/* Placeholder for the main image */}
+        {/* Main container */}
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="grid lg:grid-cols-2 gap-32 items-center">
+            {/* Left side with illustration */}
             <div className="relative">
-              <img 
-                src="/Banner-girl-1.png" 
-                alt="Support Representative" 
-                className="relative z-10"
-              />
-              
-              {/* Chat widget overlay */}
-              <div className="absolute top-1/2 right-0 bg-white rounded-lg p-4 shadow-xl w-64">
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                      <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"/>
-                    </svg>
+              {/* Circle background */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-pink-200/20 rounded-full blur-xl" />
+
+              {/* Placeholder for the main image */}
+              <div className="relative">
+                <img
+                  src="/Banner-girl-1.png"
+                  alt="Support Representative"
+                  className="relative z-10"
+                />
+
+                {/* Chat widget overlay */}
+                <div className="absolute top-1/2 right-0 bg-white rounded-lg p-4 shadow-xl w-64">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+                      </svg>
+                    </div>
+                    <span className="font-semibold">Chat With Our Expert</span>
                   </div>
-                  <span className="font-semibold">Chat With Our Expert</span>
+                  <div className="space-y-2 mb-3">
+                    <div className="h-2 bg-gray-200 rounded w-full"></div>
+                    <div className="h-2 bg-gray-200 rounded w-3/4"></div>
+                  </div>
+                  <button className="w-full bg-blue-500 text-white rounded py-2 text-sm">
+                    Get Started
+                  </button>
                 </div>
-                <div className="space-y-2 mb-3">
-                  <div className="h-2 bg-gray-200 rounded w-full"></div>
-                  <div className="h-2 bg-gray-200 rounded w-3/4"></div>
-                </div>
-                <button className="w-full bg-blue-500 text-white rounded py-2 text-sm">
-                  Get Started
-                </button>
               </div>
             </div>
-          </div>
 
-          {/* Right side with heading and features */}
-          <div className="tracking-wide">
-            <h2 className="text-2xl md:text-4xl font-bold text-white mb-12">
-              Why Choose <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Cricsportz</span> The Best
-              <br />
-              <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Cricket API</span> Service Provider
-            </h2>
+            {/* Right side with heading and features */}
+            <div className="tracking-wide">
+              <h2 className="text-2xl md:text-4xl font-bold text-white mb-12">
+                Why Choose <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Cricsportz</span> The Best
+                <br />
+                <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>Cricket API</span> Service Provider
+              </h2>
 
-            {/* Features grid */}
-            <div className="grid md:grid-cols-2 gap-6">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="bg-white/10 h-40 backdrop-blur-lg rounded-2xl p-6 group hover:bg-white/20 transition-all duration-300"
-                >
-                  <div className="flex flex-col justify-between  gap-3 h-full">
-                    <div className="p-2 ">
-                    <Image src="/shuttle 1.png" alt="Background" width={50} height={50} className="object-fit" priority />
+              {/* Features grid */}
+              <div className="grid md:grid-cols-2 gap-6">
+                {features.map((feature, index) => (
+                  <div
+                    key={index}
+                    className="bg-white/10 h-40 backdrop-blur-lg rounded-2xl p-6 group hover:bg-white/20 transition-all duration-300"
+                  >
+                    <div className="flex flex-col justify-between  gap-3 h-full">
+                      <div className="p-2 ">
+                        <Image src="/shuttle 1.png" alt="Background" width={50} height={50} className="object-fit" priority />
+                      </div>
+                      <span className="text-white font-medium">{feature.title}</span>
                     </div>
-                    <span className="text-white font-medium">{feature.title}</span>
                   </div>
-                </div>
-              ))}
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="bg-white/10 h-40 backdrop-blur-lg rounded-2xl p-6 group hover:bg-white/20 transition-all duration-300"
-                >
-                  <div className="flex flex-col justify-between  gap-3 h-full">
-                    <div className="p-2 ">
-                    <Image src="/shuttle 1.png" alt="Background" width={50} height={50} className="object-fit" priority />
+                ))}
+                {features.map((feature, index) => (
+                  <div
+                    key={index}
+                    className="bg-white/10 h-40 backdrop-blur-lg rounded-2xl p-6 group hover:bg-white/20 transition-all duration-300"
+                  >
+                    <div className="flex flex-col justify-between  gap-3 h-full">
+                      <div className="p-2 ">
+                        <Image src="/shuttle 1.png" alt="Background" width={50} height={50} className="object-fit" priority />
+                      </div>
+                      <span className="text-white font-medium">{feature.title}</span>
                     </div>
-                    <span className="text-white font-medium">{feature.title}</span>
                   </div>
-                </div>
-              ))}
-             
+                ))}
+
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
       <div className="min-h-screen bg-[#1F242A] py-20 px-4 relative overflow-hidden flex justify-center items-center">
         {/* Background effects */}
         <div className="absolute inset-0 z-0">
@@ -665,8 +665,8 @@ export default function Page() {
 
         </div>
       </section>
-  
-    <Blog />
+
+      <Blog />
     </main>
   )
 }
