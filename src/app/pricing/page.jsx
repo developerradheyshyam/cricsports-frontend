@@ -1,8 +1,6 @@
-import Blog from "@/screens/Blog"
+import BlogScreen from "@/screens/Blog"
 import FAQSection from "@/screens/FAQ"
 import { dmSerif, urbanist } from "@/utils/fonts"
-import { PlayIcon } from "lucide-react"
-import { Play } from "next/font/google"
 import Image from "next/image"
 const Pricing = () => {
     const serviceFeatures = [
@@ -38,9 +36,9 @@ const Pricing = () => {
         }
     ];
     return (
-        <div className={`${urbanist.variable} font-urbanist  w-full   pt-20 `}>
-            <section className="min-h-screen mb-64">
-                <div className="wraper flex flex-col space-y-6 mt-10 justify-center items-center z-auto text-white ">
+        <div className={`${urbanist.variable} font-urbanist  w-full   `}>
+            <section className="min-h-screen mb-64 relative pt-20 ">
+                <div className="wraper    flex flex-col space-y-6 mt-10 justify-center items-center z-auto text-white ">
                     <h1 className="text-5xl font-bold">Pricing Plan</h1>
                     <span className={`${dmSerif.variable}   text-3xl font-thin font-dmSerif italic`}>
 
@@ -51,16 +49,16 @@ const Pricing = () => {
                 <div className="absolute inset-0 -z-10">
                     <Image src="/specialbg.png" alt="Background" fill className="object-fit" priority />
                 </div>
-                <div className="absolute  z-0 -top-20 right-10">
+                <div className="absolute  z-0 -top-20 right-10 ">
                     <Image src="/review (1).png" alt="Background" width={800} height={200} className="object-fit" priority />
                 </div>
                 <div className="absolute  z-0 -top-64 left-0">
                     <Image src="/review (2).png" alt="Background" width={600} height={200} className="object-fit" priority />
                 </div>
-                <div className="absolute  z-0 right-10 bottom-0">
+                <div className="absolute  z-0 right-10 bottom-0 ">
                     <Image src="/review (3).png" alt="Background" width={100} height={100} className="object-fit" priority />
                 </div>
-                <div className="absolute  z-0 right-0 bottom-30">
+                <div className="absolute  z-0 right-0 -top-20 ">
                     <Image src="/review (4).png" alt="Background" width={600} height={200} className="object-fit" priority />
                 </div>
                 <div className="absolute  z-0 left-0 -bottom-20">
@@ -72,9 +70,9 @@ const Pricing = () => {
                     <Image
                         src="/pricing.png"
                         alt="Background"
-                        width={1000}
-                        height={800}
-                        className="object- w-[1200px] h-[700px] z-50"
+                        width={800}
+                        height={600}
+                        className="object- w-[1000px] h-[600px] z-50"
                         priority
                     />
                    </div>
@@ -82,7 +80,7 @@ const Pricing = () => {
             </section>
          
             <FAQSection />
-            <Blog />
+            <BlogScreen />
         </div>
     )
 }

@@ -1,8 +1,7 @@
-import Blog from "@/screens/Blog"
+import BlogScreen from "@/screens/Blog"
 import FAQSection from "@/screens/FAQ"
 import { dmSerif, urbanist } from "@/utils/fonts"
 import { PlayIcon } from "lucide-react"
-import { Play } from "next/font/google"
 import Image from "next/image"
 const About = () => {
     const serviceFeatures = [
@@ -38,9 +37,9 @@ const About = () => {
         }
     ];
     return (
-        <div className={`${urbanist.variable} font-urbanist  w-full   pt-20`}>
-            <section className="min-h-screen">
-                <div className="wraper flex flex-col space-y-6 mt-10 justify-center items-center z-auto text-white ">
+        <div className={`${urbanist.variable} font-urbanist  w-full   `}>
+            <section className="min-h-screen bggreen-500 relative pt-24">
+                <div className="  wraper flex flex-col space-y-6 justify-center items-center z-auto text-white ">
                     <h1 className="text-5xl font-bold">About</h1>
                     <span className={`${dmSerif.variable}   text-3xl font-thin font-dmSerif italic`}>
 
@@ -62,13 +61,13 @@ const About = () => {
                 <div className="absolute  z-0 right-10 bottom-0">
                     <Image src="/review (3).png" alt="Background" width={100} height={100} className="object-fit" priority />
                 </div>
-                <div className="absolute  z-0 right-0 bottom-30">
+                <div className="absolute  z-0  right-0 -top-20">
                     <Image src="/review (4).png" alt="Background" width={600} height={200} className="object-fit" priority />
                 </div>
                 <div className="absolute  z-0 left-0 -bottom-20">
                     <Image src="/review (5).png" alt="Background" width={600} height={200} className="object-fit" priority />
                 </div>
-                <div className="absolute flex justify-center items-center -translate-x-1/2  z-0 left-1/2 -bottom-72  w-full ">
+                <div className="absolute flex justify-center items-center -translate-x-1/2  z-0 left-1/2 -bottom-80  w-full ">
                     <Image
                         src="/about-girl.png"
                         alt="Background"
@@ -79,8 +78,8 @@ const About = () => {
                     />
                 </div>
             </section>
-            <section className="min-h-screen flex  items-end justify-center">
-                <div className="pb-40 px-4 bg-white">
+            <section className="min-h-screen flex  items-end justify-center mt-20 ">
+                <div className="pb-10 px-4 bg-white">
                     <div className="max-w-6xl mx-auto text-center">
                         {/* Headings */}
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -125,7 +124,7 @@ const About = () => {
                 </div>
 
             </section>
-            <section className="pb-20 flex  justify-center">
+            <section className=" min-h-screen flex  items-center justify-center ">
                 <div className="w-full max-w-7xl p-3 mx-auto  ">
                     <div className="flex w-full  flex-col items-center space-y-20">
                         {/* Left side - Text content */}
@@ -229,7 +228,7 @@ const About = () => {
                 </div>
             </section>
             <FAQSection />
-            <Blog />
+            <BlogScreen />
         </div>
     )
 }

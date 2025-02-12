@@ -2,7 +2,7 @@
 import { ArrowRight } from 'lucide-react';
 import React from 'react'
 import { dmSerif } from '@/utils/fonts';
-const Blog = () => {
+const BlogScreen = () => {
     const blogPosts = [
         {
           id: 1,
@@ -87,4 +87,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default BlogScreen
