@@ -87,7 +87,12 @@ const Header = () => {
           onClose={handleDrawerToggle}
           ModalProps={{ keepMounted: true }}
           PaperProps={{
-            className: "bg-[#A69CA3] backdrop-blur-lg border-l border-white/20 w-full max-w-xs !important"
+            sx: {
+              backgroundColor: "#A69CA3 !important", // Override MUI styles
+              backdropFilter: "blur(10px)", // Ensure the blur effect remains
+              borderLeft: "1px solid rgba(255, 255, 255, 0.2)",
+            },
+            className: "bg-[#A69CA3]  !important backdrop-blur-lg border-l border-white/20 w-full max-w-xs"
           }}
         >
           <div className="flex flex-col h-full">
