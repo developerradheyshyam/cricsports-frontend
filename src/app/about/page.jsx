@@ -168,13 +168,13 @@ const About = () => {
             {/* About Company Section */}
             <section className="min-h-screen flex items-center justify-center py-12 sm:py-16">
                 <div className="w-full max-w-5xl p-3 mx-auto">
-                    <div className="flex w-full flex-col items-center space-y-12 sm:space-y-20">
-                        <div className="w-full px-4 flex flex-col lg:flex-row lg:justify-between lg:items-center space-y-8 lg:space-y-0">
+                    <div className="flex w-full flex-col items-start space-y-12 sm:space-y-20">
+                        <div className="w-full px-4 flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0">
                             <div className="w-full lg:w-1/2 space-y-2">
-                                <h2 className="text-3xl sm:text-4xl font-bold">
-                                    About The Company Made<br />
-                                    for API the Creator<br />
-                                    of <span className="text-red-600">Cricsportz</span>
+                                <h2 className="text-3xl sm:text-3xl leading-loose font-semibold ">
+                                    About The Company Made
+                                    for API the Creator
+                                    of<span className={`${dmSerif.variable} font-thin font-dmSerif italic text-red-600`}>Cricsportz</span>
                                 </h2>
                             </div>
 

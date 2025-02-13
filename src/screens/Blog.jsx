@@ -74,7 +74,7 @@ const BlogScreen = () => {
             </p>
 
             {/* Read More Button */}
-            <button className="flex space-x-3 justify-center max-w-xs  items-center mt-4 w-full md:w-64    py-3 border-2 border-red-600 text-red-600  font-thin rounded-lg hover:bg-red-600 hover:text-white transition-colors">
+            <button className="flex space-x-3 justify-center  items-center mt-4 p-8  py-3 border-2 border-red-600 text-red-600  font-thin rounded-lg hover:bg-red-600 hover:text-white transition-colors">
               <span> Read More</span>
               <ArrowRight className="bg-red-700 p-1 rounded-full text-white" />
             </button>

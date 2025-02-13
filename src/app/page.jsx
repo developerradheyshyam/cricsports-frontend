@@ -161,10 +161,10 @@ export default function Page() {
   );
 
   const FeatureCard = ({ feature }) => (
-    <div className="bg-white/30 h-32  backdrop-blur-lg rounded-xl sm:rounded-2xl p-4 sm:p-6 group hover:bg-white/20 transition-all duration-300">
+    <div className="bg-white/20 h-32  backdrop-blur-lg rounded-xl sm:rounded-2xl p-4 sm:p-6 group hover:bg-white/10 transition-all duration-300">
       <div className="flex flex-col justify-between gap-3 h-full">
         <div className="p-2">
-          <Image src="/shuttle 1.png" alt="Feature icon" width={30} height={30} className="object-contain" />
+          <Image src="/shuttle 1.png" alt="Feature icon" width={40} height={40} className="object-contain" />
         </div>
         <span className="text-white text-sm font-medium">{feature.title}</span>
       </div>
@@ -213,7 +213,7 @@ export default function Page() {
   );
   return (
     <main className={`${urbanist.variable} font-urbanist min-h-screen w-full relative `}>
-      <div className="relative pt-20 md:pt-32">
+      <div className="relative pt-20 ">
         {/* Background Image - Responsive positioning */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -226,7 +226,7 @@ export default function Page() {
         </div>
 
         {/* Main Content Container - Adjusted padding for mobile */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 py-8 md:py-16 text-center flex flex-col justify-center items-center space-y-8 md:space-y-14">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 py-8 md:py-16 text-center flex flex-col justify-center items-center ">
           <div className="max-w-4xl mx-auto space-y-4 md:space-y-6">
             {/* Heading - Responsive typography */}
             <h1 className={`${urbanist.variable} text-3xl sm:text-4xl md:text-[3.7rem] leading-tight md:leading-[1] font-bold font-urbanist tracking-wide`}>
@@ -257,9 +257,9 @@ export default function Page() {
             </div>
 
             {/* Client Section - Responsive layout */}
-            <div className="pt-8 md:pt-12 relative flex justify-center flex-col items-center">
+            <div className="relative flex justify-center flex-col items-center ">
               {/* Decorative Shape - Hidden on mobile */}
-              <div className="hidden md:block absolute left-[30%] top-20">
+              <div className="hidden md:block absolute left-[30%] top-8">
                 <Image
                   src="/shape2.png"
                   alt="Decorative shape"
@@ -295,13 +295,13 @@ export default function Page() {
           </div>
 
           {/* Hero Image - Responsive container */}
-          <div className="w-full h-[400px] md:h-[700px] flex justify-center max-w-5xl">
+          <div className=" w-full  h-[400px] md:h-[600px] flex justify-center items-start max-w-5xl ">
             <Image
               src="/herobg.png"
               alt="Hero background"
               width={1280}
               height={700}
-              className="object-contain w-full h-full"
+              className=" object-contain w-full h-full"
             />
           </div>
         </div>
@@ -341,7 +341,7 @@ export default function Page() {
                   </div>
 
                   {/* Content - Responsive typography and spacing */}
-                  <h3 className="text-xl sm:text-2xl font-mono font-bold mb-3 sm:mb-4 text-gray-900">
+                  <h3 className="text-xl sm:text-2xl  font-bold mb-3 sm:mb-4 text-gray-900">
                     {feature.title}
                   </h3>
                   <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
@@ -354,12 +354,12 @@ export default function Page() {
         </div>
 
         {/* Background Shape - Adjusted positioning */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 -bottom-40">
           <Image
             src="/shape1.png"
             alt="Background"
             fill
-            className="object-fit opacity-50 sm:opacity-100"
+            className="object-contain opacity-50 sm:opacity-100"
             priority
           />
         </div>
@@ -444,7 +444,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 flex justify-center items-center min-h-screen py-8 sm:py-12">
+      <div className="mx-auto max-w-5xl  flex justify-center items-center min-h-screen py-8 sm:py-12">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {cards.map((card, index) => (
             <div
@@ -486,7 +486,7 @@ export default function Page() {
                 {/* Card Icons */}
                 {card.type === 'normal' && (
                   <div className="mb-6 sm:mb-8">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                       <Image
                         src="/calender.png"
                         alt="Calendar icon"
@@ -702,8 +702,8 @@ export default function Page() {
             </div>
 
             {/* Right side content */}
-            <div className="tracking-wide order-1 lg:order-2 w-full  ">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-8 ">
+            <div className="tracking-[0.050rem] order-1 lg:order-2 w-full  ">
+              <h2 className="text-xl sm:text-xl md:text-3xl font-semibold text-white mb-8 ">
                 Why Choose{' '}
                 <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
                   Cricsportz
@@ -726,7 +726,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-[#FFF8EE] py-8 sm:py-12 md:py-16">
+      <div className="w-full bg-white py-8 sm:py-12 md:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-16 flex flex-col justify-center items-center">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
@@ -795,7 +795,7 @@ export default function Page() {
                   className="flex-none w-full sm:w-[85%] md:w-[45%] lg:w-[32%] snap-center px-3 sm:px-4"
                 >
                   {/* Individual testimonial card - adjusted padding and height */}
-                  <div className="bg-white/10 backdrop-blur-lg flex flex-col justify-between border-t-[2px] border-t-gray-500 border-l-[2px] border-l-gray-500 rounded-2xl p-6 sm:p-6 h-auto min-h-[14rem] sm:min-h-[16rem]">
+                  <div className="bg-white/10 backdrop-blur-lg flex flex-col justify-between borde-gray-500 border-[1px] border-gray-400 rounded-2xl p-6 sm:p-6 h-auto min-h-[14rem] sm:min-h-[16rem]">
                     {/* Star rating - adjusted size and spacing */}
                     <div className="flex space-x-1 mb-4 sm:mb-6  ">
                       {[...Array(testimonial.rating)].map((_, i) => (
