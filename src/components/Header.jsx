@@ -88,11 +88,11 @@ const Header = () => {
           ModalProps={{ keepMounted: true }}
           PaperProps={{
             sx: {
-              backgroundColor: "#A69CA3 !important", // Override MUI styles
+              backgroundColor: "#D3D0D3 !important", // Override MUI styles
               backdropFilter: "blur(10px)", // Ensure the blur effect remains
               borderLeft: "1px solid rgba(255, 255, 255, 0.2)",
             },
-            className: "bg-[#A69CA3]  !important backdrop-blur-lg border-l border-white/20 w-full max-w-xs"
+            className: "bg[#D3D0D3]  !important backdrop-blur-lg border-l border-white/20 w-full max-w-xs"
           }}
         >
           <div className="flex flex-col h-full">
