@@ -144,7 +144,7 @@ const Blog = () => {
                     />
                 </div>
             </section>
-            <section className="min-h-screen -mt-72 bg-white">
+            <section className="min-h-screen -mt-56 md:-mt-72 bg-white">
                 <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-8">
                     {/* Main Slider - Responsive adjustments for height, padding, and layout */}
                     <div className="relative mb-4 sm:mb-8">
@@ -153,7 +153,7 @@ const Blog = () => {
                             <ChevronLeft className="w-6 h-6" />
                         </button>
 
-                        <div className="rounded-xl sm:rounded-2xl overflow-hidden relative h-[40vh] sm:h-[50vh] md:h-[60vh]">
+                        <div className="rounded-xl sm:rounded-2xl overflow-hidden relative min-h-[350px] h-[40vh] sm:h-[50vh] md:h-[60vh]">
                             <div className="flex flex-col md:flex-row items-start md:items-center p-4 sm:p-8 md:p-12 h-full">
                                 {/* Content container - Full width on mobile, half on desktop */}
                                 <div className="w-full md:w-1/2 text-white z-10 h-full">

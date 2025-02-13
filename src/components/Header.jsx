@@ -87,7 +87,7 @@ const Header = () => {
           onClose={handleDrawerToggle}
           ModalProps={{ keepMounted: true }}
           PaperProps={{
-            className: "bg-white/40 backdrop-blur-lg border-l border-white/20 w-full max-w-xs"
+            className: "bg-[#A69CA3] backdrop-blur-lg border-l border-white/20 w-full max-w-xs !important"
           }}
         >
           <div className="flex flex-col h-full">
