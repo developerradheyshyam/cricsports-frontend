@@ -114,19 +114,19 @@ export default function Page() {
   ];
   const testimonials = [
     {
-      text: " Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      text: "Lorem Ipsum is simply dummy Text text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
       author: "Chetan Mayal",
       position: "CEO, Cricsportz",
       rating: 5
     },
     {
-      text: " Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      text: "Lorem Ipsum is simply dummy Text text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
       author: "Chetan Mayal",
       position: "CEO, Cricsportz",
       rating: 5
     },
     {
-      text: " Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      text: "Lorem Ipsum is simply dummy Text text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
       author: "Chetan Mayal",
       position: "CEO, Cricsportz",
       rating: 5
@@ -238,7 +238,7 @@ export default function Page() {
             </h1>
 
             {/* Description - Improved readability on mobile */}
-            <p className="text-gray-700 max-w-4xl mx-auto text-base md:text-lg leading-relaxed">
+            <p className="text-gray-700 max-w-4xl mx-auto text-sm md:text-base leading-relaxed">
               Cricket is more than simply a game; it&apos;s a way of life for millions of devoted followers.
               If you&apos;re a fan of the game, a fantasy cricket player, or a developer looking to address
               cricket scores and statistics in your app or website, you&apos;ve come to the perfect spot!
@@ -326,17 +326,17 @@ export default function Page() {
           </div>
 
           {/* Features Grid - Converted to responsive grid */}
-          <div className="mx-auto px-2 sm:px-6">
+          <div className="mx-auto px-2 sm:px-6  ">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                  className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
                   {/* Icon Container - Adjusted for mobile */}
                   <div className="mb-4 sm:mb-6">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                      <PresentationIcon className="w-5 h-5 sm:w-6 sm:h-6 text-orange-400" />
+                    <div className="mb-4">
+                      <Image src="/cup.png" alt="Service icon" width={50} height={50} className="object-contain" />
                     </div>
                   </div>
 
@@ -344,7 +344,7 @@ export default function Page() {
                   <h3 className="text-xl sm:text-2xl font-mono font-bold mb-3 sm:mb-4 text-gray-900">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
@@ -359,7 +359,7 @@ export default function Page() {
             src="/shape1.png"
             alt="Background"
             fill
-            className="object-cover opacity-50 sm:opacity-100"
+            className="object-fit opacity-50 sm:opacity-100"
             priority
           />
         </div>
@@ -450,11 +450,11 @@ export default function Page() {
             <div
               key={index}
               className={`
-              relative flex flex-col justify-between overflow-hidden border 
+              relative flex flex-col  justify-between overflow-hidden border 
               rounded-xl p-4 sm:p-6 
               ${card.type === 'featured'
-                  ? 'col-span-1 md:col-span-2 h-auto min-h-[320px] text-white'
-                  : 'h-auto min-h-[300px]'
+                  ? 'col-span-1 md:col-span-2 h-[300px] md:h-auto  md:min-h-[320px] text-white'
+                  : ' h-[250px] md:h-auto md:min-h-[300px]'
                 }
               transition-all duration-300 hover:shadow-lg
             `}
@@ -519,7 +519,7 @@ export default function Page() {
                   <h3 className={`
                   text-sm sm:text-base py-2 w-fit
                   ${card.type === 'featured'
-                      ? 'text-base sm:text-lg md:text-xl'
+                      ? 'text-sm sm:text-lg md:text-xl'
                       : 'border px-3 rounded-full'
                     }
                 `}>
@@ -552,7 +552,7 @@ export default function Page() {
           ))}
         </div>
       </div>
-      <div className="max-w-5xl container mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
+      <div className="max-w-5xl container mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16 mb-10">
         {/* Header Section */}
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
@@ -612,7 +612,7 @@ export default function Page() {
           <div className="lg:pl-6 xl:pl-12 mt-8 lg:mt-0 h-full ">
             <div className="relative rounded-2xl sm:rounded-3xl border-2 h-full  shadow-lg">
               {/* Main Image */}
-              <div className="relative w-full h-full">
+              <div className="relative w-full h-full min-h-[50vh]">
                 <Image
                   src="/cricketStats.png"
                   alt="Cricket API Dashboard"
@@ -709,7 +709,7 @@ export default function Page() {
                   Cricsportz
                 </span>{' '}
                 The Best
-                
+
                 <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
                   Cricket API
                 </span>{' '}
@@ -723,6 +723,45 @@ export default function Page() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full bg-[#FFF8EE] py-8 sm:py-12 md:py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-16 flex flex-col justify-center items-center">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
+              Our App{' '}
+              <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+                Score Live
+              </span>
+              App
+            </h2>
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+              All important tours, series, and domestic tournaments from across the world are included
+              in the CricSportz cricket data stream coverage. Our cricket data stream may be utilized
+              in a variety of applications, including but not limited to Livescore, fantasy apps,
+              betting, and others. The coverage of the feed includes live scorecards, live fantasy
+              metrics, as well as pregame and in-play odds from bookmakers.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center relative px-4">
+          <Image
+            src="/iphone.png"
+            alt="Cricket API Dashboard"
+            width={1200}
+            height={600}
+            className="md:max-w-lg  h-[60vh] object-contain"
+          />
+        <div className="flex justify-center gap-2  h-10 ">
+            {[1,2,3,4].map((_, index) => (
+              <button
+                key={index}
+                className={`h-2 sm:h-3 rounded-full transition-all touch-target-adjust ${index === 0 ? "bg-[#E80054] w-6 sm:w-8" : "w-2 sm:w-3 bg-[#D9D9D9]"
+                  }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
       </div>
@@ -749,14 +788,14 @@ export default function Page() {
 
           {/* Testimonials container - modified for better mobile scrolling */}
           <div className="relative w-full overflow-hidden flex   justify-center ">
-            <div className="flex max-w-5xl justify-center  snap-x snap-mandatory overflow-x-auto hide-scrollbar">
+            <div className="flex max-w-5xl justify-center  snap-x snap-mandatory overflow-x-hidden  hide-scrollbar">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
                   className="flex-none w-full sm:w-[85%] md:w-[45%] lg:w-[32%] snap-center px-3 sm:px-4"
                 >
                   {/* Individual testimonial card - adjusted padding and height */}
-                  <div className="bg-white/10 backdrop-blur-lg flex flex-col justify-between border-t-[2px] border-t-gray-500 border-l-[2px] border-l-gray-500 rounded-2xl p-6 sm:p-6 h-auto min-h-[18rem] sm:min-h-[20rem]">
+                  <div className="bg-white/10 backdrop-blur-lg flex flex-col justify-between border-t-[2px] border-t-gray-500 border-l-[2px] border-l-gray-500 rounded-2xl p-6 sm:p-6 h-auto min-h-[14rem] sm:min-h-[16rem]">
                     {/* Star rating - adjusted size and spacing */}
                     <div className="flex space-x-1 mb-4 sm:mb-6  ">
                       {[...Array(testimonial.rating)].map((_, i) => (
@@ -769,7 +808,7 @@ export default function Page() {
 
                     {/* Testimonial text - responsive font size and spacing */}
                     <p className="text-sm sm:text-base text-white mb-6 sm:mb-8 text-left">
-                    &quot;{testimonial.text}&quot;
+                      &quot;{testimonial.text}&quot;
                     </p>
 
                     {/* Author info - adjusted spacing and image size */}
@@ -812,7 +851,7 @@ export default function Page() {
           <div className=" text-2xl sm:text-3xl mb-4 sm:mb-0">
             <h2 className="font-semibold">Explore Our Data Services</h2>
             <div className="flex items-center gap-2">
-             
+
               <span className="font-semibold">Multiple Products  <span className={`${dmSerif.variable} text-nowrap font-dmSerif text-red-600 font-thin italic`}>
                 Cricket API
               </span></span>

@@ -152,7 +152,7 @@ const Contact = () => {
                     <div className="space-y-6 md:w-[40%] ">
                         {/* Phone Card */}
                         <div className="bg-white rounded-xl shadow-xl p-6 ">
-                            <div className="flex items-start gap-4">
+                            <div className="flex flex-col md:flex-row items-start gap-4">
                                 <div className="p-3 bg-blue-50 rounded-full">
                                     <Phone className="w-6 h-6 text-blue-600" />
                                 </div>
@@ -168,7 +168,7 @@ const Contact = () => {
 
                         {/* Email Card */}
                         <div className="bg-white rounded-xl shadow-xl p-6">
-                            <div className="flex items-start gap-4">
+                            <div className="flex flex-col md:flex-row items-start gap-4">
                                 <div className="p-3 bg-blue-50 rounded-full">
                                     <Mail className="w-6 h-6 text-blue-600" />
                                 </div>
@@ -184,7 +184,7 @@ const Contact = () => {
 
                         {/* Address Card */}
                         <div className="bg-white rounded-xl shadow-xl p-6">
-                            <div className="flex items-start gap-4">
+                            <div className="flex flex-col md:flex-row items-start gap-4">
                                 <div className="p-3 bg-blue-50 rounded-full">
                                     <MapPin className="w-6 h-6 text-blue-600" />
                                 </div>

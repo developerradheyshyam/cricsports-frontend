@@ -30,7 +30,7 @@ const BlogScreen = () => {
     <section className="max-w-5xl mx-auto px-4 py-12">
     {/* Header Section */}
     <div className="text-center mb-8">
-      <h2 className="text-4xl font-bold mb-4">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">
         Latest <span className={`${dmSerif.variable} font-dmSerif text-red-600  font-thin italic`}>News & Blogs</span>
       </h2>
       <p className="text-gray-600 max-w-3xl mx-auto">
@@ -74,9 +74,8 @@ const BlogScreen = () => {
             </p>
 
             {/* Read More Button */}
-            <button className="flex space-x-3 items-center mt-4 px-8 py-3 border-2 border-red-600 text-red-600  font-thin rounded-lg hover:bg-red-600 hover:text-white transition-colors">
-              <span> Read More
-              </span>
+            <button className="flex space-x-3 justify-center max-w-xs  items-center mt-4 w-full md:w-64    py-3 border-2 border-red-600 text-red-600  font-thin rounded-lg hover:bg-red-600 hover:text-white transition-colors">
+              <span> Read More</span>
               <ArrowRight className="bg-red-700 p-1 rounded-full text-white" />
             </button>
           </div>

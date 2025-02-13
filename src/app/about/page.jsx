@@ -1,5 +1,3 @@
-import BlogScreen from "@/screens/Blog"
-import FAQSection from "@/screens/FAQ"
 import { dmSerif, urbanist } from "@/utils/fonts"
 import { PlayIcon } from "lucide-react"
 import Image from "next/image"
@@ -45,7 +43,7 @@ const About = () => {
                     <span className={`${dmSerif.variable} text-2xl sm:text-3xl font-thin font-dmSerif italic text-center`}>
                         Cricsportz API and Website & Apps
                     </span>
-                    <p className="max-w-5xl text-center">
+                    <p className="max-w-5xl text-center text-sm md:text-base">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
 
