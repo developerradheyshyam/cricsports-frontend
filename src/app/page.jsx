@@ -1,6 +1,6 @@
 import { dmSerif, urbanist } from "@/utils/fonts"
 import Image from "next/image"
-import { ArrowRight, Calendar, CheckCircle, Clock, MessageSquare, PresentationIcon, Presentation, Star, Rocket, MessageSquareIcon } from "lucide-react"
+import { ArrowRight, CheckCircle, Presentation, Star, MessageSquareIcon } from "lucide-react"
 import Blog from "@/screens/Blog";
 import BackgroundDecorations from "@/components/BackgroundDecorations";
 
@@ -383,21 +383,18 @@ export default function Page() {
           {/* Content Section - Full width on mobile, half on desktop */}
           <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 text-black z-10">
             <div className="space-y-2 sm:space-y-3">
-              <h1 className="text-3xl sm:text-4xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl font-bold ">
                 Live Cricket Score and{' '}
-                <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+                <span className={`${dmSerif.variable} font-dmSerif text-red-700 font-thin italic`}>
                   Statistics
-                </span>
-              </h1>
-              <h2 className="text-2xl sm:text-3xl font-semibold">
-                <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic mr-2`}>
+
                   API
                 </span>
-                For{' '}
-                <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+                {' '} For{' '}
+                <span className={`${dmSerif.variable} font-dmSerif text-red-700 font-thin italic`}>
                   Website and App
                 </span>
-              </h2>
+              </h1>
             </div>
 
             <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
@@ -415,10 +412,10 @@ export default function Page() {
         </div>
 
         {/* Second Section */}
-        <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="max-w-5xl w-full flex flex-col lg:flex-row  gap-8 lg:gap-12">
           {/* Left Column - Title */}
           <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="relative flex items-center h-auto sm:h-64 w-full">
+            <div className="relative flex items h-auto sm:h-64 w-full">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
                 What We Offer API{' '}
                 <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
@@ -444,8 +441,8 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="mx-auto max-w-5xl  flex justify-center items-center min-h-screen py-8 sm:py-12">
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+      <div className="mx-auto max-w-5xl  flex justify-center items-center min-h-screen py-8 px-4 sm:px-0 sm:py-12">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 ">
           {cards.map((card, index) => (
             <div
               key={index}
@@ -753,8 +750,8 @@ export default function Page() {
             height={600}
             className="md:max-w-lg  h-[60vh] object-contain"
           />
-        <div className="flex justify-center gap-2  h-10 ">
-            {[1,2,3,4].map((_, index) => (
+          <div className="flex justify-center gap-2  h-10 ">
+            {[1, 2, 3, 4].map((_, index) => (
               <button
                 key={index}
                 className={`h-2 sm:h-3 rounded-full transition-all touch-target-adjust ${index === 0 ? "bg-[#E80054] w-6 sm:w-8" : "w-2 sm:w-3 bg-[#D9D9D9]"
@@ -857,7 +854,7 @@ export default function Page() {
               </span></span>
             </div>
           </div>
-          <button className="flex items-center gap-1 text-sm text-red-600 border border-red-600 rounded-full px-4 py-1 hover:bg-red-50 transition-colors">
+          <button className="flex items-center gap-1 text-base text-red-600 border border-red-600 rounded-md font-semibold px-4 py-2 hover:bg-red-50 transition-colors">
             View All Feature
             <ArrowRight className="w-4 h-4" />
           </button>
