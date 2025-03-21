@@ -60,7 +60,7 @@ const Blog = () => {
     ];
     return (
         <div className={`${urbanist.variable} font-urbanist  w-full   `}>
-            <section className="min-h-screen relative pt-24 md:pt-32 overflow-hidden">
+            <section className="min-h-screen relative pt-40 overflow-hidden">
                 {/* Main content wrapper */}
                 <div className="wraper flex flex-col space-y-4 sm:space-y-6 justify-center items-center z-10 text-white px-4 sm:px-6">
                     {/* Responsive heading with adaptive font sizes */}
@@ -73,8 +73,7 @@ const Blog = () => {
 
                     {/* Responsive paragraph with controlled width and font size */}
                     <p className="max-w-xl sm:max-w-3xl md:max-w-5xl text-center text-sm sm:text-base">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
+                    All important tours, series, and domestic tournaments from across the world are included in the CricSportz cricket data stream data stream may be utilized in a variety of applications, including but not limited to </p>
                 </div>
 
                 {/* Background image - full coverage */}

@@ -37,7 +37,7 @@ const About = () => {
     return (
         <div className={`${urbanist.variable} font-urbanist w-full`}>
             {/* Hero Section */}
-            <section className="min-h-screen relative pt-24 ">
+            <section className="min-h-screen relative pt-24 md:pt-40">
                 <div className="wraper flex flex-col space-y-4 sm:space-y-6 justify-center items-center z-10 text-white px-4 sm:px-6">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">About</h1>
                     <span className={`${dmSerif.variable} text-2xl sm:text-3xl font-thin font-dmSerif italic text-center`}>
@@ -109,7 +109,7 @@ const About = () => {
                     />
                 </div>
 
-                <div className="absolute  flex justify-center items-center -translate-x-1/2 left-1/2 -bottom-40 sm:-bottom-60 md:-bottom-80 w-full">
+                <div className="absolute  flex justify-center items-center -translate-x-1/2 left-1/2 -bottom-40 sm:-bottom-60 md:-bottom-96 w-full">
                     <Image
                         src="/about-girl.png"
                         alt="About Hero"
@@ -122,7 +122,7 @@ const About = () => {
             </section>
 
             {/* Trusted By Section */}
-            <section className="min-h-screen flex items-end justify-center mt-40 sm:mt-32 md:mt-20">
+            <section className="min-h-screen flex items-end justify-center mt-40 ">
                 <div className="pb-6 sm:pb-8 md:pb-10 px-4 bg-white w-full">
                     <div className="max-w-6xl mx-auto text-center">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
@@ -168,8 +168,8 @@ const About = () => {
             {/* About Company Section */}
             <section className="min-h-screen flex items-center justify-center py-12 sm:py-16">
                 <div className="w-full max-w-5xl p-3 mx-auto">
-                    <div className="flex w-full flex-col items-start space-y-12 sm:space-y-20">
-                        <div className="w-full px-4 flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0">
+                    <div className="flex w-full flex-col items-start space-y-12 sm:space-y-20 ">
+                        <div className="w-full flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0 md:space-x-4">
                             <div className="w-full lg:w-1/2 space-y-2">
                                 <h2 className="text-3xl sm:text-3xl leading-loose font-semibold ">
                                     About The Company Made
@@ -192,30 +192,30 @@ const About = () => {
                         </div>
 
                         {/* Stats and Demo Button */}
-                        <div className="flex flex-col sm:flex-row flex-wrap justify-evenly w-full gap-8 sm:gap-4">
-                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 w-full sm:w-auto">
+                        <div className="flex flex-col sm:flex-row flex-wrap justify-between  items-center px-4 w-full gap-8 sm:gap-4">
+                            <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-8  ">
                                 <div className="text-center">
                                     <p className="text-3xl sm:text-4xl font-bold italic">
-                                        100<span className="text-[#AB2735]">+</span>
+                                        100<span className="font-thin">+</span>
                                     </p>
                                     <p className="text-sm text-gray-600">Team Members</p>
                                 </div>
                                 <div className="text-center">
                                     <p className="text-3xl sm:text-4xl font-bold italic">
-                                        80<span className="text-[#AB2735]">+</span>
+                                        80<span className="font-thin">+</span>
                                     </p>
                                     <p className="text-sm text-gray-600">Business Clients</p>
                                 </div>
                                 <div className="text-center">
                                     <p className="text-3xl sm:text-4xl font-bold italic">
-                                        500<span className="text-[#AB2735]">+</span>
+                                        500<span className="font-thin">+</span>
                                     </p>
                                     <p className="text-sm text-gray-600">Total Active Live APP</p>
                                 </div>
                             </div>
 
-                            <button className="flex items-center space-x-3 bg-white rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg hover:shadow-xl transition-shadow mx-auto sm:mx-0">
-                                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-red-700 rounded-full flex items-center justify-center">
+                            <button className=" flex items-center space-x-3 bg-white px-4 sm:px-6 py-2 sm:py-3 transition-shadow mx-auto sm:mx-0">
+                                <div className="w-10 h-10 sm:w-14 sm:h-14 bg-red-700 rounded-full flex items-center justify-center">
                                     <PlayIcon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                                 </div>
                                 <span className="text-base sm:text-lg">
@@ -232,7 +232,12 @@ const About = () => {
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="space-y-8 sm:space-y-12">
                         <div className="space-y-4 sm:space-y-6">
-                            <p className="text-sm font-medium">Enterprise API Services Partner</p>
+                            <div className="w-full relative h-20 flex  items-center">
+                                <div className="absolute inset-0 z-50">
+                                    <Image src="/cricsportz-Partners.png" alt="Background" fill className="object-fill" priority />
+                                </div>
+                                <p className="text-lg font-medium">Enterprise API Services Partner</p>
+                            </div>
                             <h2 className="text-3xl sm:text-4xl font-bold">
                                 The Best <span className="text-[#AB2735]">Cricsportz</span><br />
                                 <span className="text-[#AB2735]">API</span> Services Of <span className="text-[#AB2735]">Partners</span>

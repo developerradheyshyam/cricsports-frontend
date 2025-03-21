@@ -6,8 +6,8 @@ const Pricing = () => {
 
     return (
         <div className={`${urbanist.variable} font-urbanist  w-full   `}>
-            <section className="min-h-screen mb-64 relative pt-20 ">
-                <div className="wraper    flex flex-col space-y-6 mt-10 justify-center items-center z-auto text-white ">
+            <section className="min-h-screen mb-64 sm:mb-[35rem] relative pt-24 md:pt-40">
+                <div className="wraper px-4 md:px-0    flex flex-col space-y-6 mt-10 justify-center items-center z-auto text-white ">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">Pricing Plan</h1>
                     <span className={`${dmSerif.variable} text-2xl sm:text-3xl font-thin font-dmSerif italic text-center px-1`}>
 
@@ -33,16 +33,16 @@ const Pricing = () => {
                 <div className="absolute  z-0 left-0 -bottom-20">
                     <Image src="/review (5).png" alt="Background" width={600} height={200} className="object-fit" priority />
                 </div>
-                <div className="absolute  flex justify-center items-center -translate-x-1/2 left-1/2 -bottom-40 sm:-bottom-60 md:-bottom-96 w-full">
+                <div className="absolute   flex justify-center  -translate-x-1/2 left-1/2 -bottom-40 sm:-bottom-60 md:-bottom-[35rem]  w-full">
 
-                    <div className="px-6 py-16 bg-white rounded-xl">
+                    <div className="px-6 py-16 bg-white rounded-xl w-full max-w-5xl">
 
                         <Image
                             src="/pricing.png"
                             alt="Background"
                             width={800}
                             height={600}
-                            className="object-contain w-full max-w-[800px] sm:max-w-[1000px] md:max-w-[1200px] h-auto sm:h-[500px] md:h-[600px] z-50"
+                            className="object-fill w-full  h-auto sm:h-[500px] md:h-[700px] z-50"
                             priority
                         />
                     </div>

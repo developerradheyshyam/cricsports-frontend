@@ -5,7 +5,7 @@ const Contact = () => {
 
     return (
         <div className={`${urbanist.variable} font-urbanist  w-full   `}>
-            <section className="min-h-screen relative pt-32">
+            <section className="min-h-screen relative pt-40">
                 <div className="  wraper flex flex-col space-y-6 justify-center items-center z-auto text-white ">
                     <h1 className="text-5xl font-bold">Contact Us
                     </h1>
@@ -32,26 +32,26 @@ const Contact = () => {
                 </div>
 
             </section>
-            <section className="h-[60vh] flex pt-20  -mt-96 bg-white  ">
+            <section className="h-[60vh] flex pt-20  -mt-56 md:-mt-72 bg-white  ">
                 <div className="relative md:min-h-[60vh]  h-full w-full  overflow-x-hidden overflow-y-visible">
 
-                    <div className="absolute flex justify-center items-center -translate-x-1/2  z-10 left-1/2   w-full ">
+                    <div className="absolute flex justify-center items-center -translate-x-1/2  z-10 left-1/2 md:ml-20   w-full ">
                         <Image
                             src="/contact (2).png"
                             alt="Background"
                             width={1000}
                             height={800}
-                            className="object-fir w-auto md:w-[600px] md:h-[400px] z-50"
+                            className="object-fir w-auto md:w-[500px] md:h-[350px] z-50"
                             priority
                         />
                     </div>
-                    <div className="absolute hidden md:block  items-center top-20 left-56  w-full ">
+                    <div className="absolute hidden md:block  items-center top-24 left-[26rem]  w-full ">
                         <Image
                             src="/contact (1).png"
                             alt="Background"
                             width={1000}
                             height={800}
-                            className="object-fir w-[450px] h-auto "
+                            className="object-fir w-[350px] h-auto "
                             priority
                         />
                     </div>
@@ -67,10 +67,10 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-            <div className="w-full max-w-5xl  mx-auto px-4 py-12 min-h-screen mt-20">
-                <div className="flex flex-col  md:flex-row gap-6  justify-center relative">
+            <div className="w-full max-w-5xl  mx-auto px-4 py-12 min-h-screen mt-20 ">
+                <div className="flex flex-col  md:flex-row gap-6 md:gap-20 w-full justify-between relative">
                     {/* Left side - Contact Form */}
-                    <div className=" md:w-[40%] ">
+                    <div className=" md:w-[50%] ">
                         {/* Decorative dots */}
 
 
@@ -79,13 +79,13 @@ const Contact = () => {
                             <p className="text-gray-500 text-sm mb-6">Fill in the form below</p>
 
                             <form className="space-y-6">
-                                <div className="absolute  items-center -top-14 left-10 -z-10 ">
+                                <div className="absolute  items-center -top-40 -left-20 -z-10 ">
                                     <Image
                                         src="/contact (5).png"
                                         alt="Background"
                                         width={1000}
                                         height={800}
-                                        className="object-fit w-[100px] h-auto z-50 ml-10"
+                                        className="object-fit w-[150px] h-auto z-50 ml-10"
                                         priority
                                     />
                                 </div>
@@ -149,7 +149,7 @@ const Contact = () => {
                     </div>
 
                     {/* Right side - Contact Information */}
-                    <div className="space-y-6 md:w-[40%] ">
+                    <div className="space-y-6 md:w-[50%] ">
                         {/* Phone Card */}
                         <div className="bg-white rounded-xl shadow-xl p-6 ">
                             <div className="flex flex-col md:flex-row items-start gap-4">

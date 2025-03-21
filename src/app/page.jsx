@@ -187,7 +187,7 @@ export default function Page() {
   );
 
   const FeaturedServiceCard = () => (
-    <div className="relative overflow-hidden h-[400px] sm:h-[500px] rounded-lg p-6 text-white md:col-span-2 lg:col-span-1">
+    <div className="relative overflow-hidden h-[400px] sm:h-[420px] rounded-3xl p-6 text-white md:col-span-2 lg:col-span-1">
       <div className="absolute inset-0 -z-10">
         <Image src="/sv-bg.png" alt="Featured background" fill className="object-cover" />
       </div>
@@ -385,7 +385,7 @@ export default function Page() {
             <div className="space-y-2 sm:space-y-3">
               <h1 className="text-3xl sm:text-4xl font-bold ">
                 Live Cricket Score and{' '}
-                <span className={`${dmSerif.variable} font-dmSerif text-red-700 font-thin italic`}>
+                <span className={`${dmSerif.variable} font-dmSerif text-red-700 font-thin italic mr-2`}>
                   Statistics
 
                   API
@@ -730,7 +730,7 @@ export default function Page() {
               Our App{' '}
               <span className={`${dmSerif.variable} font-dmSerif text-[#AB2735] font-thin italic`}>
                 Score Live
-              </span>
+              </span>{' '}
               App
             </h2>
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
@@ -789,7 +789,7 @@ export default function Page() {
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="flex-none w-full sm:w-[85%] md:w-[45%] lg:w-[32%] snap-center px-3 sm:px-4"
+                  className="flex-none w-full sm:w-[85%] md:w-[45%] lg:w-[32%] snap-center px-3 "
                 >
                   {/* Individual testimonial card - adjusted padding and height */}
                   <div className="bg-white/10 backdrop-blur-lg flex flex-col justify-between borde-gray-500 border-[1px] border-gray-400 rounded-2xl p-6 sm:p-6 h-auto min-h-[14rem] sm:min-h-[16rem]">
