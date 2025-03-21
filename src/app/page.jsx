@@ -179,7 +179,7 @@ export default function Page() {
       <h3 className="text-md sm:text-xl md:max-w-[80%] font-semibold mb-4">
         {service.title}
       </h3>
-      <button className="flex items-center gap-2 text-sm text-red-600 border border-red-600 rounded-md w-fit px-4 py-2 hover:bg-red-50 transition-colors">
+      <button className="flex items-center gap-2 text-sm text-[#AB2735] border border-red-600 rounded-md w-fit px-4 py-2 hover:bg-red-50 transition-colors">
         <span>View More</span>
         <ArrowRight className="w-4 h-4 bg-red-500 text-white p-1 rounded-full" />
       </button>
@@ -231,7 +231,7 @@ export default function Page() {
             {/* Heading - Responsive typography */}
             <h1 className={`${urbanist.variable} text-3xl sm:text-4xl md:text-[3.7rem] leading-tight md:leading-[1] font-bold font-urbanist tracking-wide`}>
               Cricket Score and{' '}
-              <span className={`${dmSerif.variable} text-red-600 font-thin font-dmSerif italic`}>
+              <span className={`${dmSerif.variable} text-[#AB2735] font-thin font-dmSerif italic`}>
                 Statistics API
               </span>{' '}
               for Website & App
@@ -313,12 +313,12 @@ export default function Page() {
           <div className="max-w-5xl mx-auto mb-8 sm:mb-12 md:mb-16 text-center px-4">
             <h2 className={`${urbanist.variable} text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight`}>
               Apps Using{' '}
-              <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+              <span className={`${dmSerif.variable} font-dmSerif text-[#AB2735] font-thin italic`}>
                 Our Cricket API
               </span>{' '}
               for
               <br className="hidden sm:block" />
-              <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+              <span className={`${dmSerif.variable} font-dmSerif text-[#AB2735] font-thin italic`}>
                 Various
               </span>{' '}
               functionalities.
@@ -326,12 +326,12 @@ export default function Page() {
           </div>
 
           {/* Features Grid - Converted to responsive grid */}
-          <div className="mx-auto px-2 sm:px-6  ">
+          <div className="mx-auto px-2   ">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                  className="bg-white rounded-2xl p-6  shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
                   {/* Icon Container - Adjusted for mobile */}
                   <div className="mb-4 sm:mb-6">
@@ -418,11 +418,11 @@ export default function Page() {
             <div className="relative flex items h-auto sm:h-64 w-full">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
                 What We Offer API{' '}
-                <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+                <span className={`${dmSerif.variable} font-dmSerif text-[#AB2735] font-thin italic`}>
                   Features
                 </span>{' '}
                 of{' '}
-                <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+                <span className={`${dmSerif.variable} font-dmSerif text-[#AB2735] font-thin italic`}>
                   CricSports
                 </span>
               </h3>
@@ -554,7 +554,7 @@ export default function Page() {
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
             Features of Our{' '}
-            <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+            <span className={`${dmSerif.variable} font-dmSerif text-[#AB2735] font-thin italic`}>
               Real-Time Cricket
             </span>{' '}
             API
@@ -597,7 +597,7 @@ export default function Page() {
 
             <button className="
             w-full sm:w-auto mt-6 px-6 sm:px-8 py-3 
-            border-2 border-red-600 text-red-600 font-thin 
+            border-2 border-red-600 text-[#AB2735] font-thin 
             rounded-lg hover:bg-red-600 hover:text-white 
             transition-colors text-sm sm:text-base
           ">
@@ -643,7 +643,7 @@ export default function Page() {
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
               Cricket Feed{' '}
-              <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+              <span className={`${dmSerif.variable} font-dmSerif text-[#AB2735] font-thin italic`}>
                 Coverage
               </span>
             </h2>
@@ -702,12 +702,12 @@ export default function Page() {
             <div className="tracking-[0.050rem] order-1 lg:order-2 w-full  ">
               <h2 className="text-xl sm:text-xl md:text-3xl font-semibold text-white mb-8 ">
                 Why Choose{' '}
-                <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+                <span className={`${dmSerif.variable} font-dmSerif text-[#AB2735] font-thin italic`}>
                   Cricsportz
                 </span>{' '}
                 The Best
 
-                <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+                <span className={`${dmSerif.variable} font-dmSerif text-[#AB2735] font-thin italic`}>
                   Cricket API
                 </span>{' '}
                 Service Provider
@@ -728,7 +728,7 @@ export default function Page() {
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
               Our App{' '}
-              <span className={`${dmSerif.variable} font-dmSerif text-red-600 font-thin italic`}>
+              <span className={`${dmSerif.variable} font-dmSerif text-[#AB2735] font-thin italic`}>
                 Score Live
               </span>
               App
@@ -771,7 +771,7 @@ export default function Page() {
           {/* Heading - responsive font sizes and spacing */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 px-4 leading-tight">
             Our Happy Users & Their{' '}
-            <span className={`${dmSerif.variable} text-red-600 font-thin font-dmSerif italic`}>
+            <span className={`${dmSerif.variable} text-[#AB2735] font-thin font-dmSerif italic`}>
               Cricsportz
             </span>{' '}
             API
@@ -849,12 +849,12 @@ export default function Page() {
             <h2 className="font-semibold">Explore Our Data Services</h2>
             <div className="flex items-center gap-2">
 
-              <span className="font-semibold">Multiple Products  <span className={`${dmSerif.variable} text-nowrap font-dmSerif text-red-600 font-thin italic`}>
+              <span className="font-semibold">Multiple Products  <span className={`${dmSerif.variable} text-nowrap font-dmSerif text-[#AB2735] font-thin italic`}>
                 Cricket API
               </span></span>
             </div>
           </div>
-          <button className="flex items-center gap-1 text-base text-red-600 border border-red-600 rounded-md font-semibold px-4 py-2 hover:bg-red-50 transition-colors">
+          <button className="flex items-center gap-1 text-base text-[#AB2735] border border-red-600 rounded-md font-semibold px-4 py-2 hover:bg-red-50 transition-colors">
             View All Feature
             <ArrowRight className="w-4 h-4" />
           </button>

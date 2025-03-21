@@ -70,7 +70,7 @@ const FAQSection = () => {
         <div className="max-w-5xl min-h-screen mx-auto px-4 py-16 sm:px-6 lg:px-8 flex flex-col space-y-10 mt-10">
             <div className="text-center lg:text-left flex flex-col justify-center items-center z-50 mt-20 mb-20">
                 <h2 className="text-3xl font-bold mb-3 ">
-                    Frequently Asked Questions   <span className={`${dmSerif.variable}  text-red-600 text-3xl font-thin font-dmSerif italic`}>Cricsportz</span>
+                    Frequently Asked Questions   <span className={`${dmSerif.variable}  text-[#AB2735] text-3xl font-thin font-dmSerif italic`}>Cricsportz</span>
                 </h2>
                 <p className="text-gray-600 max-w-5xl ">
                     All important tours, series, and domestic tournaments from across the world are included in the CricSportz cricket data stream data stream may be utilized in a variety of applications, including but not limited to

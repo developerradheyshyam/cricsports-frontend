@@ -44,16 +44,16 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-8 ">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.path}
-              className={`relative font-semibold text-nowrap transition-all duration-300 ${
-                isHomePage ? "text-gray-700 hover:text-gray-900" : "text-white hover:text-gray-300"
+              className={`relative text-sm text-nowrap transition-all duration-300  ${
+                isHomePage ? "hover:text-gray-900 " : "text-white hover:text-gray-300"
               } ${
                 isActive(item.path) ? 
-                  "after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[#be5360]" : ""
+                  " font-bold text-[#B1000B] hover:text-[#B1000B]" : ""
               }`}
             >
               {item.name}

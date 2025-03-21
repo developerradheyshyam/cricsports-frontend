@@ -38,24 +38,24 @@ const Footer = () => {
         <img src="/logo.png" alt="Cricsportz Logo" className="h-12" />
         <p className="text-white mt-4 text-xs sm:text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been text ever since the 1500s.</p>
         <div className="flex space-x-4">
-          <a href="#" className="hover:text-red-600 transition-colors">
+          <a href="#" className="hover:text-[#AB2735] transition-colors">
             <div className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center">
-              <Facebook className="h-5 w-5 text-white hover:text-red-600" />
+              <Facebook className="h-5 w-5 text-white hover:text-[#AB2735]" />
             </div>
           </a>
-          <a href="#" className="hover:text-red-600 transition-colors">
+          <a href="#" className="hover:text-[#AB2735] transition-colors">
             <div className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center">
-              <Twitter className="h-5 w-5 text-white hover:text-red-600" />
+              <Twitter className="h-5 w-5 text-white hover:text-[#AB2735]" />
             </div>
           </a>
-          <a href="#" className="hover:text-red-600 transition-colors">
+          <a href="#" className="hover:text-[#AB2735] transition-colors">
             <div className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center">
-              <Linkedin className="h-5 w-5 text-white hover:text-red-600" />
+              <Linkedin className="h-5 w-5 text-white hover:text-[#AB2735]" />
             </div>
           </a>
-          <a href="#" className="hover:text-red-600 transition-colors">
+          <a href="#" className="hover:text-[#AB2735] transition-colors">
             <div className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center">
-              <Instagram className="h-5 w-5 text-white hover:text-red-600" />
+              <Instagram className="h-5 w-5 text-white hover:text-[#AB2735]" />
             </div>
           </a>
         </div>

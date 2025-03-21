@@ -340,7 +340,7 @@ const Blog = () => {
 
                                         {/* Read More button - Optimized for touch */}
                                         <div className="flex items-center justify-between">
-                                            <button className="group flex items-center gap-2 text-sm sm:text-base text-red-600 border border-red-600 rounded-md px-4 py-2 hover:bg-red-50 transition-colors">
+                                            <button className="group flex items-center gap-2 text-sm sm:text-base text-[#AB2735] border border-red-600 rounded-md px-4 py-2 hover:bg-red-50 transition-colors">
                                                 <span>Read More</span>
                                                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 bg-red-600 text-white rounded-full p-1 group-hover:bg-red-700 transition-colors" />
                                             </button>

@@ -128,7 +128,7 @@ const About = () => {
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
                             Trusted by Thousands Business
                         </h2>
-                        <h3 className="text-xl sm:text-2xl md:text-3xl font-serif italic text-red-600 mb-8 sm:mb-12 md:mb-16">
+                        <h3 className="text-xl sm:text-2xl md:text-3xl font-serif italic text-[#AB2735] mb-8 sm:mb-12 md:mb-16">
                             More than <span className={`${dmSerif.variable} font-thin font-dmSerif italic`}>100+</span> Products are using Cricsportz
                         </h3>
 
@@ -174,7 +174,7 @@ const About = () => {
                                 <h2 className="text-3xl sm:text-3xl leading-loose font-semibold ">
                                     About The Company Made
                                     for API the Creator
-                                    of<span className={`${dmSerif.variable} font-thin font-dmSerif italic text-red-600`}>Cricsportz</span>
+                                    of<span className={`${dmSerif.variable} font-thin font-dmSerif italic text-[#AB2735]`}>Cricsportz</span>
                                 </h2>
                             </div>
 
@@ -196,19 +196,19 @@ const About = () => {
                             <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 w-full sm:w-auto">
                                 <div className="text-center">
                                     <p className="text-3xl sm:text-4xl font-bold italic">
-                                        100<span className="text-red-600">+</span>
+                                        100<span className="text-[#AB2735]">+</span>
                                     </p>
                                     <p className="text-sm text-gray-600">Team Members</p>
                                 </div>
                                 <div className="text-center">
                                     <p className="text-3xl sm:text-4xl font-bold italic">
-                                        80<span className="text-red-600">+</span>
+                                        80<span className="text-[#AB2735]">+</span>
                                     </p>
                                     <p className="text-sm text-gray-600">Business Clients</p>
                                 </div>
                                 <div className="text-center">
                                     <p className="text-3xl sm:text-4xl font-bold italic">
-                                        500<span className="text-red-600">+</span>
+                                        500<span className="text-[#AB2735]">+</span>
                                     </p>
                                     <p className="text-sm text-gray-600">Total Active Live APP</p>
                                 </div>
@@ -234,8 +234,8 @@ const About = () => {
                         <div className="space-y-4 sm:space-y-6">
                             <p className="text-sm font-medium">Enterprise API Services Partner</p>
                             <h2 className="text-3xl sm:text-4xl font-bold">
-                                The Best <span className="text-red-600">Cricsportz</span><br />
-                                <span className="text-red-600">API</span> Services Of <span className="text-red-600">Partners</span>
+                                The Best <span className="text-[#AB2735]">Cricsportz</span><br />
+                                <span className="text-[#AB2735]">API</span> Services Of <span className="text-[#AB2735]">Partners</span>
                             </h2>
                         </div>
 
@@ -244,7 +244,7 @@ const About = () => {
                                 <p className="text-gray-600 max-w-2xl text-base sm:text-lg">
                                     Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry&apos;s Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type.
                                 </p>
-                                <button className="max-w-52 px-4 sm:px-6 py-2 border border-red-600 text-red-600 rounded-lg hover:bg-red-50 transition-colors">
+                                <button className="max-w-52 px-4 sm:px-6 py-2 border border-red-600 text-[#AB2735] rounded-lg hover:bg-red-50 transition-colors">
                                     Contact Us
                                 </button>
                             </div>
