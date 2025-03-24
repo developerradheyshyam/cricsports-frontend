@@ -2,10 +2,11 @@ import React from 'react';
 import { Facebook, Twitter, Linkedin, Instagram, Phone, Mail, MapPin } from "lucide-react";
 import { RxArrowTopRight } from "react-icons/rx";
 import Image from 'next/image';
+import { urbanist } from '@/utils/fonts';
 
 const Footer = () => {
   return (
-<footer className="bg-[#000229] text-white ">
+<footer className={`${urbanist.variable} font-urbanist bg-[#000229] text-white `}>
   {/* Newsletter Section */}
   <div className=" max-w-5xl mx-auto px-4 md:px-0 py-8 border-b border-gray-800">
     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -68,7 +69,7 @@ const Footer = () => {
       {/* Useful Links */}
       <div>
         <h3 className="font-semibold mb-4 text-lg sm:text-xl">Useful Links</h3> {/* Adjusted font size */}
-        <ul className="space-y-2 text-xs">
+        <ul className="space-y-3 text-xs">
           <li><a href="#" className="text-white hover:text-white transition-colors">Home</a></li>
           <li><a href="#" className="text-white hover:text-white transition-colors">About</a></li>
           <li><a href="#" className="text-white hover:text-white transition-colors">Refund</a></li>
@@ -80,7 +81,7 @@ const Footer = () => {
       {/* Our Services */}
       <div>
         <h3 className="font-semibold mb-4 text-lg sm:text-xl">Our Services</h3>
-        <ul className="space-y-2 text-xs">
+        <ul className="space-y-3 text-xs">
           <li><a href="#" className="text-white hover:text-white transition-colors">Cricket</a></li>
           <li><a href="#" className="text-white hover:text-white transition-colors">Football</a></li>
         </ul>
@@ -91,24 +92,24 @@ const Footer = () => {
         <h3 className="font-semibold mb-4 text-lg sm:text-xl">Contact Us</h3>
         <ul className="space-y-4">
           <li className="flex items-center gap-3">
-            <img src={"/pointer-01.png"} alt="" className="border-[#1B1E55] border-[1px] rounded-full p-[6px]" />
+          <img src={"/arrow.png"} alt="" className=" w-10 h-10 " />
             <div>
-              <p className="text-xs text-white">On call Inquiry</p>
-              <p className="text-xs">+91-988-000-0000</p>
+              <p className="text-xs text-gray-400">On call Inquiry</p>
+              <p className="text-[14px]">+91-988-000-0000</p>
             </div>
           </li>
           <li className="flex items-center gap-3">
-            <img src={"/pointer-01.png"} alt="" className="border-[#1B1E55] border-[1px] rounded-full p-[6px]" />
+            <img src={"/arrow.png"} alt="" className=" w-10 h-10 " />
             <div>
-              <p className="text-xs text-white">For Email</p>
-              <p className="text-xs">info@cricsportz.com</p>
+              <p className="text-xs text-gray-400">For Email</p>
+              <p className="text-[14px]">info@cricsportz.com</p>
             </div>
           </li>
           <li className="flex items-center gap-3">
-            <img src={"/pointer-01.png"} alt="" className="border-[#1B1E55] border-[1px] rounded-full p-[6px]" />
+          <img src={"/arrow.png"} alt="" className=" w-10 h-10 " />
             <div>
-              <p className="text-xs text-white">Visit Us</p>
-              <p className="text-xs">229, 21st East Street, Kamaraj Nagar Jaipur, Rajasthan 303030</p>
+              <p className="text-xs text-gray-400">Visit Us</p>
+              <p className="text-[14px]"><span className='text-nowrap'>229, 21st East Street, Kamaraj Nagar Jaipur,</span> Rajasthan 303030</p>
             </div>
           </li>
         </ul>
