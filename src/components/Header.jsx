@@ -33,12 +33,12 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <Image 
-              src={isHomePage ? "/logo (1).png" : "/logo.png"} 
-              alt="Cricsportz Logo" 
-              width={150} 
+            <Image
+              src={isHomePage ? "/logo (1).png" : "/logo.png"}
+              alt="Cricsportz Logo"
+              width={150}
               height={40}
-              className="transition-transform hover:scale-105" 
+              className="transition-transform hover:scale-105"
             />
           </Link>
         </div>
@@ -49,22 +49,27 @@ const Header = () => {
             <Link
               key={item.name}
               href={item.path}
-              className={`relative text-sm text-nowrap transition-all duration-300  ${
-                isHomePage ? "hover:text-gray-900 " : "text-white hover:text-gray-300"
-              } ${
-                isActive(item.path) ? 
-                  " font-bold text-[#B1000B] hover:text-[#B1000B]" : ""
-              }`}
+              className={`relative text-sm text-nowrap transition-all duration-300 
+           ${isHomePage
+                  ? isActive(item.path)
+                    ? "font-bold text-[#B1000B] hover:text-[#B1000B]" // Active tab on HomePage
+                    : "text-gray-500 hover:text-gray-900" // Inactive tab on HomePage
+                  : isActive(item.path)
+                    ? "font-bold text-[#B1000B] hover:text-[#B1000B]" // Active tab on other pages
+                    : "text-white hover:text-gray-300" // Inactive tab on other pages
+                }
+         `}
             >
+
+
               {item.name}
             </Link>
           ))}
           <button
-            className={`border px-6 py-2 rounded-md transition-all duration-300 hover:scale-105 ${
-              isHomePage
+            className={`border px-6 py-2 rounded-md transition-all duration-300 hover:scale-105 ${isHomePage
                 ? "border-[#be5360] text-[#be5360] hover:bg-red-100"
                 : "border-white text-white hover:bg-white/20"
-            }`}
+              }`}
             onClick={() => router.push("/contact")}
           >
             Contact Us
@@ -104,18 +109,17 @@ const Header = () => {
                 <X className="h-6 w-6 text-zinc-900" />
               </button>
             </div>
-            
+
             <div className="flex-1 py-6">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.path}
                   onClick={handleDrawerToggle}
-                  className={`flex items-center px-6 py-4 transition-all duration-300 ${
-                    isActive(item.path)
+                  className={`flex items-center px-6 py-4 transition-all duration-300 ${isActive(item.path)
                       ? "bg-white/40 text-[#be5360] font-medium"
                       : "text-white/80 hover:bg-white/10"
-                  }`}
+                    }`}
                 >
                   <span className="text-lg">{item.name}</span>
                   {isActive(item.path) && (

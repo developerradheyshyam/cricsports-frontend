@@ -48,7 +48,6 @@ const Pricing = () => {
                     </div>
                 </div>
             </section>
-
             <FAQSection />
             <BlogScreen />
         </div>
