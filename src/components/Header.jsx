@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { urbanist } from "@/utils/fonts";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -28,7 +29,7 @@ const Header = () => {
   const isActive = (path) => pathname === path;
 
   return (
-    <header className="w-full fixed top-0 left-0 z-40 bg-white/10 backdrop-blur-lg py-4 px-6">
+    <header className={`${urbanist.variable} font-urbanist  w-full fixed top-0 left-0 z-40 bg-white/10 backdrop-blur-lg py-4 px-6`}>
       <nav className="max-w-5xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
@@ -49,7 +50,7 @@ const Header = () => {
             <Link
               key={item.name}
               href={item.path}
-              className={`relative text-sm text-nowrap transition-all duration-300 
+              className={`relative font-medium text-[16px] text-nowrap transition-all duration-300 
            ${isHomePage
                   ? isActive(item.path)
                     ? "font-bold text-[#B1000B] hover:text-[#B1000B]" // Active tab on HomePage
