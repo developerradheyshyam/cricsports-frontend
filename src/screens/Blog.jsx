@@ -27,7 +27,7 @@ const BlogScreen = () => {
         },
       ];
   return (
-    <section className="max-w-5xl mx-auto px-4 py-12">
+    <section className="max-w-5xl mx-auto px-4 md:px-0 py-12">
     {/* Header Section */}
     <div className="text-center mb-8">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">

@@ -53,10 +53,10 @@ const Header = () => {
               className={`relative font-medium text-[16px] text-nowrap transition-all duration-300 
            ${isHomePage
                   ? isActive(item.path)
-                    ? "font-bold text-[#B1000B] hover:text-[#B1000B]" // Active tab on HomePage
+                    ? " text-[#B1000B] hover:text-[#B1000B]" // Active tab on HomePage
                     : "text-gray-500 hover:text-gray-900" // Inactive tab on HomePage
                   : isActive(item.path)
-                    ? "font-bold text-[#B1000B] hover:text-[#B1000B]" // Active tab on other pages
+                    ? " text-[#B1000B] hover:text-[#B1000B]" // Active tab on other pages
                     : "text-white hover:text-gray-300" // Inactive tab on other pages
                 }
          `}

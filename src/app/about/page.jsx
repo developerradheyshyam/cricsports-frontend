@@ -214,14 +214,14 @@ const About = () => {
                                 </div>
                             </div>
 
-                            <button className=" flex items-center space-x-3 bg-white px-4 sm:px-6 py-2 sm:py-3 transition-shadow mx-auto sm:mx-0">
-                                <div className="w-10 h-10 sm:w-14 sm:h-14 bg-red-700 rounded-full flex items-center justify-center">
-                                    <PlayIcon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                                </div>
+                            <div className=" flex items-center space-x-3 bg-white px-4 sm:px-6 py-2 sm:py-3 transition-shadow mx-auto sm:mx-0">
+                                <button className="relative flex justify-center items-center w-12 h-12 text-xs md:w-14 md:h-14 mr-4  rounded-full transition-colors">
+                                         <Image src="/play.png" alt="Feature icon" fill className="object-cover" />
+                                         </button>
                                 <span className="text-base sm:text-lg">
                                     Watch <span className="text-red-700">API Demo</span>
                                 </span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>

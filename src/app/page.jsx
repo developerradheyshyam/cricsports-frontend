@@ -447,7 +447,7 @@ export default function Page() {
             <div
               key={index}
               className={`
-              relative flex flex-col  justify-between overflow-hidden  
+              relative flex flex-col border  justify-between overflow-hidden  
               p-4 sm:p-6 
               ${card.type === 'featured'
                   ? 'col-span-1 md:col-span-2 h-[300px] md:h-auto rounded-3xl md:min-h-[320px] text-white'
@@ -458,7 +458,7 @@ export default function Page() {
             >
               {/* Background images for featured cards */}
               {card.type === 'featured' && (
-                <div className="absolute inset-0 z-0 border ">
+                <div className="absolute inset-0 z-0  ">
                   <Image
                     src="/servicebg.png"
                     alt="Background"
@@ -607,9 +607,9 @@ export default function Page() {
 
           {/* Image Section */}
           <div className="lg:pl-6 xl:pl-12 mt-8 lg:mt-0 h-full ">
-            <div className="relative rounded-2xl sm:rounded-3xl border-2 h-full  shadow-lg">
+            <div className="relative rounded-2xl sm:rounded-3xl border-2 h-full overflow-hidden  shadow-lg">
               {/* Main Image */}
-              <div className="relative w-full h-full min-h-[50vh]">
+              <div className="relative w-full h-full min-h-[50vh] ">
                 <Image
                   src="/cricketStats.png"
                   alt="Cricket API Dashboard"
@@ -785,11 +785,11 @@ export default function Page() {
 
           {/* Testimonials container - modified for better mobile scrolling */}
           <div className="relative w-full overflow-hidden flex   justify-center ">
-            <div className="flex max-w-5xl justify-center  snap-x snap-mandatory overflow-x-hidden  hide-scrollbar">
+            <div className="flex max-w-5xl justify-between bsnap-x snap-mandatory overflow-x-hidden  hide-scrollbar">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="flex-none w-full sm:w-[85%] md:w-[45%] lg:w-[32%] snap-center px-3 "
+                  className="flex-none w-full sm:w-[85%] md:w-[45%] lg:w-[32%] snap-center px-2"
                 >
                   {/* Individual testimonial card - adjusted padding and height */}
                   <div className="bg-white/10 backdrop-blur-lg flex flex-col justify-between borde-gray-500 border-[1px] border-gray-400 rounded-2xl p-6 sm:p-6 h-auto min-h-[14rem] sm:min-h-[16rem]">
@@ -843,7 +843,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <section className="max-w-5xl mx-auto px-4 py-8 sm:py-12">
+      <section className="max-w-5xl mx-auto px-4 md:px-0 py-8 sm:py-12">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8">
           <div className=" text-2xl sm:text-3xl mb-4 sm:mb-0">
             <h2 className="font-semibold">Explore Our Data Services</h2>
