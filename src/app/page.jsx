@@ -213,7 +213,7 @@ export default function Page() {
   );
   return (
     <main className={`${urbanist.variable} font-urbanist min-h-screen w-full relative `}>
-      <div className="relative pt-20 ">
+      <div className="relative pt-32 ">
         {/* Background Image - Responsive positioning */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -597,7 +597,7 @@ export default function Page() {
 
             <button className="
             w-full sm:w-auto mt-6 px-6 sm:px-8 py-3 
-            border-2 border-red-600 text-[#AB2735] font-thin 
+            border-[1px] border-red-600 text-[#AB2735] font-thin 
             rounded-lg hover:bg-red-600 hover:text-white 
             transition-colors text-sm sm:text-base
           ">
