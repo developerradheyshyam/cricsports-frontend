@@ -298,7 +298,7 @@ const Blog = () => {
                             {mainPosts.map((post) => (
                                 <div
                                     key={post.id}
-                                    className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                                    className="bg-white rounded-lg sm:rounded-xl overflow-hidden  transition-shadow"
                                 >
                                     {/* Main post image - Maintained aspect ratio */}
                                     <div className="relative aspect-[16/9]">
@@ -313,7 +313,7 @@ const Blog = () => {
                                     </div>
 
                                     {/* Post content - Responsive padding and spacing */}
-                                    <div className="flex flex-col justify-between p-4 sm:p-6">
+                                    <div className="flex flex-col justify-between py-4 sm:py-6">
                                         {/* Date tag - Consistent sizing across breakpoints */}
                                         <div className="flex items-center space-x-1 border border-gray-200 w-fit rounded-full px-3 py-1.5 sm:px-4 sm:py-2">
                                             <div className="rounded-lg flex items-center justify-center">

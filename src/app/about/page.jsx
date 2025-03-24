@@ -115,7 +115,7 @@ const About = () => {
                         alt="About Hero"
                         width={1000}
                         height={800}
-                        className="object-contain w-full max-w-[800px] sm:max-w-[1000px] md:max-w-[1200px] h-auto sm:h-[500px] md:h-[700px] z-50"
+                        className="bject-contain md:object-cover   w-full max-w-[800px] sm:max-w-[1000px] md:max-w-5xl h-auto sm:h-[500px] md:h-[700px] z-50"
                         priority
                     />
                 </div>
@@ -124,7 +124,7 @@ const About = () => {
             {/* Trusted By Section */}
             <section className="min-h-screen flex items-end justify-center mt-40 ">
                 <div className="pb-6 sm:pb-8 md:pb-10 px-4 bg-white w-full">
-                    <div className="max-w-6xl mx-auto text-center">
+                    <div className="max-w-5xl mx-auto text-center">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
                             Trusted by Thousands Business
                         </h2>
@@ -229,7 +229,7 @@ const About = () => {
 
             {/* Services Section */}
             <section className="min-h-screen flex justify-center py-12 sm:py-16">
-                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-5xl mx-auto px-4 sm:px-0 lg:px-0">
                     <div className="space-y-8 sm:space-y-12">
                         <div className="space-y-4 sm:space-y-6">
                             <div className="w-full relative h-20 flex  items-center">
