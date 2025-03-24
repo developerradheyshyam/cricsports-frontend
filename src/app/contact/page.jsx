@@ -4,7 +4,8 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 const Contact = () => {
 
     return (
-        <div className={`${urbanist.variable} font-urbanist  w-full   `}>
+        <div className={`${urbanist.variable} relative font-urbanist  w-full   `}>
+            <div className="absolute bottom-0 right-0 min-h-screen w-full z-10 bg-gradient-to-bl from-white to-green-[#FFE7E3]"></div>
             <section className="min-h-screen relative pt-40">
                 <div className="  wraper flex flex-col space-y-6 justify-center items-center z-auto text-white ">
                     <h1 className="text-5xl font-bold">Contact Us

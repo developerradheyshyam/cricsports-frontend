@@ -136,7 +136,7 @@ const About = () => {
                             {[...Array(5)].map((_, index) => (
                                 <div
                                     key={`top-${index}`}
-                                    className="bg-white rounded-lg shadow-lg p-4 sm:p-6 hover:shadow-xl transition-shadow duration-300"
+                                    className="bg-white rounded-lg border-[1px] border-[#E2E9FF] p-4 sm:p-6  transition-shadow duration-300"
                                 >
                                     <img
                                         src="/logo (1).png"
@@ -151,7 +151,7 @@ const About = () => {
                             {[...Array(4)].map((_, index) => (
                                 <div
                                     key={`bottom-${index}`}
-                                    className="bg-white rounded-lg shadow-lg p-4 sm:p-6 hover:shadow-xl transition-shadow duration-300"
+                                    className="bg-white rounded-lg border-[1px] border-[#E2E9FF] p-4 sm:p-6  transition-shadow duration-300"
                                 >
                                     <img
                                         src="/logo (1).png"
@@ -193,7 +193,7 @@ const About = () => {
 
                         {/* Stats and Demo Button */}
                         <div className="flex flex-col sm:flex-row flex-wrap justify-between  items-center px-4 w-full gap-8 sm:gap-4">
-                            <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-8  ">
+                            <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-8  bg-white shadow-lg p-6 rounded-full">
                                 <div className="text-center">
                                     <p className="text-3xl sm:text-4xl font-bold italic">
                                         100<span className="font-thin">+</span>
@@ -232,7 +232,7 @@ const About = () => {
                 <div className="max-w-5xl mx-auto px-4 sm:px-0 lg:px-0">
                     <div className="space-y-8 sm:space-y-12">
                         <div className="space-y-4 sm:space-y-6">
-                            <div className="w-full relative h-20 flex  items-center">
+                            <div className="w-full relative h-16 flex  items-center">
                                 <div className="absolute inset-0 z-50">
                                     <Image src="/cricsportz-Partners.png" alt="Background" fill className="object-fill" priority />
                                 </div>
@@ -249,7 +249,7 @@ const About = () => {
                                 <p className="text-gray-600 max-w-2xl text-base sm:text-lg">
                                     Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry&apos;s Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type.
                                 </p>
-                                <button className="max-w-52 px-4 sm:px-6 py-2 border border-red-600 text-[#AB2735] rounded-lg hover:bg-red-50 transition-colors">
+                                <button className="max-w-36 px-4 sm:px-6 py-2 border border-red-600 text-[#AB2735] rounded-lg hover:bg-red-50 transition-colors">
                                     Contact Us
                                 </button>
                             </div>
@@ -262,7 +262,7 @@ const About = () => {
                                     <img
                                         src={feature.icon}
                                         alt={feature.title}
-                                        className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                                        className="w-16 h-16 sm:w-20 sm:h-20 object-contain bg-white rounded-full p-2"
                                     />
                                     <div className="space-y-2 max-w-xs">
                                         <h3 className="font-semibold text-lg sm:text-xl max-w-[14rem]">{feature.title}</h3>

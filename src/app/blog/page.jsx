@@ -298,10 +298,10 @@ const Blog = () => {
                             {mainPosts.map((post) => (
                                 <div
                                     key={post.id}
-                                    className="bg-white rounded-lg sm:rounded-xl overflow-hidden  transition-shadow"
+                                    className="bg-white overflow-hidden  transition-shadow"
                                 >
                                     {/* Main post image - Maintained aspect ratio */}
-                                    <div className="relative aspect-[16/9]">
+                                    <div className="relative aspect-[16/9]  rounded-lg sm:rounded-3xl overflow-hidden">
                                         <Image
                                             src={`/blogimg (${post.id}).png`}
                                             alt={post.title}

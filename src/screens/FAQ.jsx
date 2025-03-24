@@ -8,13 +8,13 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
     const contentRef = useRef(null);
 
     return (
-        <div className="border border-gray-200 rounded-lg overflow-hidden bg-white flex items-center flex-col ">
+        <div className="border border-[#E2E9FF] rounded-lg overflow-hidden bg-white flex items-center flex-col ">
             <button
-                className="w-full  h-20 px-6 py-4 flex justify-between items-center text-left hover:bg-gray-50 transition-colors"
+                className="w-full  h-10 px-6 py-4 flex justify-between items-center text-left  transition-colors"
                 onClick={onClick}
                 aria-expanded={isOpen}
             >
-                <span className="font-semibold text-gray-900">{question}</span>
+                <span className="font-medium text-gray-900">{question}</span>
                 <ChevronDown
                     className={`w-5 h-5 text-gray-500 transform transition-transform duration-300 ease-in-out ${isOpen ? '-rotate-180' : 'rotate-0'
                         }`}
@@ -28,7 +28,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
                     overflow: 'hidden'
                 }}
             >
-                <div className="px-6 py-4 text-gray-600 border-t">
+                <div className="px-6 py-4 text-gray-600 font-light text-[14px]">
                     {answer}
                 </div>
             </div>
@@ -46,7 +46,7 @@ const FAQSection = () => {
     const faqs = [
         {
             question: "Where does it come from?",
-            answer: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an"
+            answer: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
         },
         {
             question: "Where does it come from?",

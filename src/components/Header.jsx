@@ -29,7 +29,7 @@ const Header = () => {
   const isActive = (path) => pathname === path;
 
   return (
-    <header className={`${urbanist.variable} font-urbanist  w-full fixed top-0 left-0 z-40 bg-white/10 backdrop-blur-lg py-4 px-6`}>
+    <header className={`${urbanist.variable} font-urbanist absolute w-full z-40 py-4 px-6`}>
       <nav className="max-w-5xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
