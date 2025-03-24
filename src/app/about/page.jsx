@@ -1,3 +1,5 @@
+import BlogScreen from "@/screens/Blog";
+import FAQSection from "@/screens/FAQ";
 import { dmSerif, urbanist } from "@/utils/fonts"
 import { PlayIcon } from "lucide-react"
 import Image from "next/image"
@@ -274,6 +276,8 @@ const About = () => {
                     </div>
                 </div>
             </section>
+            <FAQSection />
+            <BlogScreen />
         </div>
     )
 }
