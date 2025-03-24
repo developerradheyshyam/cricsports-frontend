@@ -144,7 +144,7 @@ const Blog = () => {
                 </div>
             </section>
             <section className="min-h-screen -mt-56 md:-mt-72 bg-white">
-                <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-8">
+                <div className="w-full max-w-5xl mx-auto px-4 sm:px-0 py-4 sm:py-8">
                     {/* Main Slider - Responsive adjustments for height, padding, and layout */}
                     <div className="relative mb-4 sm:mb-8">
                         {/* Navigation buttons - Hidden on mobile, visible on larger screens */}
@@ -291,7 +291,7 @@ const Blog = () => {
                 </div>
             </section>
             <section className="h-auto min-h-screen py-4 sm:py-8">
-                <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                <div className="max-w-5xl mx-auto px-4 sm:px-0">
                     <div className="flex flex-col lg:flex-row lg:justify-between gap-4 sm:gap-6">
                         {/* Main Content - Full width on mobile, 70% on desktop */}
                         <div className="w-full lg:w-[70%] space-y-4 sm:space-y-8">

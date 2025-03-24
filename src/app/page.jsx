@@ -447,26 +447,26 @@ export default function Page() {
             <div
               key={index}
               className={`
-              relative flex flex-col  justify-between overflow-hidden border 
-              rounded-xl p-4 sm:p-6 
+              relative flex flex-col  justify-between overflow-hidden  
+              p-4 sm:p-6 
               ${card.type === 'featured'
-                  ? 'col-span-1 md:col-span-2 h-[300px] md:h-auto  md:min-h-[320px] text-white'
-                  : ' h-[250px] md:h-auto md:min-h-[300px]'
+                  ? 'col-span-1 md:col-span-2 h-[300px] md:h-auto rounded-3xl md:min-h-[320px] text-white'
+                  : ' h-[250px] md:h-auto md:min-h-[300px] rounded-xl '
                 }
               transition-all duration-300 hover:shadow-lg
             `}
             >
               {/* Background images for featured cards */}
               {card.type === 'featured' && (
-                <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 z-0 border ">
                   <Image
                     src="/servicebg.png"
                     alt="Background"
                     fill
-                    className="object-cover"
+                    className="object-cover  scale-[1.1]"
                     priority
                   />
-                  <div className="absolute bottom-0 right-0 w-[150px] sm:w-[200px]">
+                  <div className="absolute bottom-0 -right-2 w-[150px] sm:w-[200px]">
                     <Image
                       src="/shape3.png"
                       alt="Decorative shape"
@@ -575,7 +575,7 @@ export default function Page() {
               <div
                 key={index}
                 className={` h-30
-                rounded-lg p-4 sm:px-4 sm:py-2
+                rounded-2xl p-4 sm:px-4 sm:py-2
                 ${feature.bgColor} 
                 transition-transform hover:scale-[1.02] sm:hover:scale-105
                 cursor-pointer
